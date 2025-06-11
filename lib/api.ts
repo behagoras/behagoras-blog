@@ -94,7 +94,7 @@ export function updateMarkdownLinks(markdown: string, currSlug: string) {
     if (!m2.startsWith(slugDir)) {
       relLink = path.join(slugDir, m2)
     }
-    const relAssetDir = path.relative('./public', process.env.MD_ASSET_DIR)
+    const relAssetDir = path.relative('./public', process.env.MD_ASSET_DIR || path.join(process.cwd(), 'public', 'assets'))
     const fileSlugRel = decodeURI(path.join(mdDir, relLink))
     const fileSlugAbs = decodeURI(path.join(mdDir, m2))
     if (fs.existsSync(fileSlugRel)) {

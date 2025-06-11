@@ -1,5 +1,6 @@
 ---
 title: 👋 Hi, I'm David Behar
+seo_title: Behar, the Full Stack Developer
 excerpt: I'm a Full Stack Developer with 15+ years building apps that people actually enjoy using. Here you'll find my projects, thoughts, and maybe a little geeky enthusiasm.
 ---
 | 🚀 Full Stack Developer | 🖥️ 15+ Years in Tech | 📱 Building Apps People Love | 🛠️ Web, Cloud & Team Leadership | ❤️ JavaScript & TypeScript |
