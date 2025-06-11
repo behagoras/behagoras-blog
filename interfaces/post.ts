@@ -4,6 +4,7 @@ type PostType = {
   slug: string
   excerpt: string
   title: string
+  seo_title?: string
   content: string
   date?: string
   author?: Author

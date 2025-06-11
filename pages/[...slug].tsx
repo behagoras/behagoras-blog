@@ -22,6 +22,7 @@ type Props = {
 export default function Post({ post, backlinks }: Props) {
   const router = useRouter()
   const description = post.excerpt.slice(0, 155)
+  const seoTitle = post.seo_title || post.title
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
@@ -32,10 +33,10 @@ export default function Post({ post, backlinks }: Props) {
       ) : (
         <Layout>
           <NextSeo
-            title={post.title}
+            title={seoTitle}
             description={description}
             openGraph={{
-              title: post.title,
+              title: seoTitle,
               description,
               type: 'article',
               images: [{
@@ -70,6 +71,7 @@ export async function getStaticProps({ params }: Params) {
   const slug = path.join(...params.slug)
   const post = await getPostBySlug(slug, [
     'title',
+    'seo_title',
     'excerpt',
     'date',
     'slug',
