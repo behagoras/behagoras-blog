@@ -37,3 +37,7 @@ next-env.d.ts
 
 /public/md_assets/**
 .cursor/
+
+
+# We will ignore for now the public folder
+public/
