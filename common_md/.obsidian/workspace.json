@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9a9f0ad2b0966c2c",
+        "id": "8af4910b52300d33",
         "type": "tabs",
         "children": [
           {
-            "id": "ec1b119932a10943",
+            "id": "e572dc9152eac05e",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -36,7 +36,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -73,8 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "8beb398d61bd10b7",
@@ -122,7 +122,9 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "Tags"
@@ -133,13 +135,17 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
               "icon": "lucide-list",
               "title": "Outline"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -155,15 +161,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ec1b119932a10943",
+  "active": "e572dc9152eac05e",
   "lastOpenFiles": [
+    "hello-world.md",
+    "images/authors/david-behar.png.md",
+    "images/authors",
+    "images",
+    "home.md",
+    "hidden/get-project-id-account-id-and-token-vercel.md",
+    "hidden/deploy-a-custom-linked-blog-starter.md",
+    "hidden/connect-obsidian-vault-with-github.md",
+    "hidden/accepted-markdown-metadata.md",
+    "hidden",
+    "2025-06-11.md",
     "posts/connect-obsidian-vault-with-github.md",
     "Untitled.md",
     "posts/accepted-markdown-metadata.md",
     "Untitled.canvas",
-    "deploy-a-custom-linked-blog-starter.md",
-    "home.md",
-    "get-project-id-account-id-and-token-vercel.md",
     "install-linked-blog-starter-locally.md",
     "linked-blog-starter-does-not-reinvent-wheel.md",
     "statically-generated.md",

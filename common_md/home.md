@@ -1,59 +1,75 @@
 ---
-title: Dit is een kijkje in mijn brein - Obsidian vault published with NextJS and Tailwind, deployed by Vercel
-excerpt: Create your own template or use someone else's. Changing the template is a matter of updating one line
+title: About David Behar – Full Stack Developer & Problem Solver
+excerpt: I’m David Behar, a Full Stack Developer with 15+ years of experience in tech, focused on building scalable, high-performance web applications. This site shares my thoughts, ideas, and portfolio.
 ---
 
+## 👋 Hi, I'm David Behar
 
-## Problems with Obsidian Publish Alternatives (from ChatGPT):
+I'm a **Full Stack Developer** with over 15 years of experience in the tech industry — and more than 7 of those years deeply focused on web development.
 
- > 
- > **Compatibility**: Not all Obsidian Publish alternatives may be compatible with all versions of Obsidian or all markdown syntax, which can make it difficult to use certain tools or services. 
- > 
- > **Ease of use:** Some Obsidian Publish alternatives may be more difficult to set up or use than others, which can make it frustrating for new users to get started.
- > 
- > **Customization**: Some Obsidian Publish alternatives may not offer as much customization as users may want, making it difficult to tailor the appearance and functionality of their published notes to their specific needs and preferences.
- > 
- > **Performance**: Some Obsidian Publish alternatives may not perform as quickly or smoothly as users may expect, which can make it frustrating to use.
+What sets me apart is how I approach problems: I select the right tool for the job, whether that’s a full web application, a serverless backend, a CLI script, or even an Excel sheet if that’s what solves it best.
 
--- ChatGPT
+I’ve worked across the stack, but specialize in:
+- Building and optimizing complex user interfaces with **React**
+- Designing scalable backends with **JavaScript**, **TypeScript**, and **AWS Serverless**
+- Creating **developer tools**, enhancing **CI/CD pipelines**, and improving **performance** from frontend to infrastructure
 
-## How the linked-blog-starter template addresses these problems:
+---
 
-### Compatibility
+## 🛠️ My Experience in a Nutshell
 
-[External / extensible libraries](linked-blog-starter-does-not-reinvent-wheel.md) are used to convert Obsidian MD files to common markdown then to HTML
+I’ve:
+- Led teams and mentored junior developers
+- Delivered high-quality systems in **micro frontend architectures**
+- Built scalable applications powered by **Serverless Framework**, **Lambda**, **API Gateway**, and **CloudFormation**
+- Driven cross-functional solutions with **Jenkins**, **Azure DevOps**, **Auth0**, **AppSync**, and more
+- Written tests with **Jest** and **Cypress** to ensure quality at every level
 
-### Ease of Use
+---
 
-Obsidian notes [work out of the box](works-out-of-the-box-with-markdown-files.md) and after the [setup](publish-your-obsidian-notes-with-linked-blog-starter.md), publishing notes is done in 2 steps:
-1. Write a note in `/publish` folder within Obsidian
-2. Run the backup command [using the Obsidian Git plugin](connect-obsidian-vault-with-github.md)
+## 💡 Philosophy & Approach
 
-### Customization
+I care about:
+- **Solving the right problem**, not just coding for the sake of it
+- **Writing clear, maintainable code** and documenting ideas so others can follow
+- **Teaching and mentoring**, helping teams grow sustainably
+- Using **AI tools** (like prompt engineering) to accelerate early prototyping
 
-[Create your own template](deploy-a-custom-linked-blog-starter.md) or use someone else's! Changing the template is simple matter of [updating one line in your repository](update-publish-settings-github-actions.md).
-- There's also an added feature to add "PreviewLinks" to text outside of markdown files. (See the footer in the [example](https://linked-blog-starter.vercel.app/home))
+I take pride in my ability to move between technical depth and big-picture thinking. Whether it’s shipping code or helping stakeholders understand trade-offs, I thrive in both arenas.
 
-- this is a test
+---
 
-### Performance
+## 🚀 Tech I Love Working With
 
-All markdown files are [statically generated](statically-generated.md) meaning loading speeds are super speedy!
+- **Frontend**: React, Redux, Material UI, TypeScript, Webpack Module Federation
+- **Backend**: Node.js, AWS Lambda, Serverless Framework, Bash
+- **DevOps & Infra**: AWS (S3, CloudFormation, EventBridge, AppSync), Jenkins, Azure
+- **Testing**: Cypress, Jest
+- **Practices**: GitFlow, Agile/Scrum, Pair Programming
+- **Other Tools**: Figma, performance auditing, UX, generative AI
 
-## Getting Started
+---
 
-### Demo
+## 🔗 Get in Touch
 
-[https://linked-blog-starter.vercel.app/](https://linked-blog-starter.vercel.app/)
+- 📧 [davbelom@gmail.com](mailto:davbelom@gmail.com)
+- 🌐 [github.com/behagoras](https://github.com/behagoras)
+- 🔗 [linkedin.com/in/davidbehar](https://linkedin.com/in/davidbehar)
+- 📱 +52 55 1699 88310
 
-### Deploy your own
+---
 
-Only deploy through this method, if you want to get a quick server up and running. Otherwise, I'd recommend following the [instructions to integrate this with your Obsidian Vault](publish-your-obsidian-notes-with-linked-blog-starter.md).
+## 🧭 Explore My Work
 
-Deploy the example using [Vercel](https://vercel.com/new/git/external?repository-url=https://github.com/matthewwong525/linked-blog-starter&project-name=linked-blog-starter&repository-name=linked-blog-starter) or preview live with [StackBlitz](https://stackblitz.com/github/matthewwong525/linked-blog-starter)
+This blog is powered by **Next.js**, styled with **TailwindCSS**, and generated from my **Obsidian vault**. I use it to document what I learn, what I build, and how I think.
+You can explore my notes, read articles, or view projects through:
 
-### Create a Custom Fork
+- 📄 [[Resume]]
+- 🚀 [[Projects]]
+- 🧠 [[Writings]]
+- 🌍 [[Graph View]]
+- 🏷️ [[Tags]]
 
-Here is an example of how I [forked this repo](https://github.com/fleetingnotes/fleeting-notes-website) to create a landing page for [Fleeting Notes](https://www.fleetingnotes.app/). See [how to deploy a custom version of the linked-blog-starter](deploy-a-custom-linked-blog-starter.md)
+Thanks for stopping by!
 
-![fn-website-demo.gif](attachments/fn-website-demo.gif)
+— David
