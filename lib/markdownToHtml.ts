@@ -11,9 +11,22 @@ import {Element} from 'hast-util-select'
 import { renderToStaticMarkup } from "react-dom/server"
 import NotePreview from '../components/misc/note-preview'
 import { fromHtml } from 'hast-util-from-html'
+import { slugify } from './utils'
 
+// Convert [[wikilinks]] to regular markdown links
+function convertWikiLinksToMarkdown(markdown: string): string {
+  return markdown.replace(/\[\[([^\]]+)\]\]/g, (match, linkText) => {
+    const [title, displayText] = linkText.split('|')
+    const slug = slugify(title)
+    const display = displayText || title
+    
+    return `[${display}](${slug})`
+  })
+}
 
 export async function markdownToHtml(markdown: string, currSlug: string) {
+  // First, convert [[wikilinks]] to regular markdown links
+  markdown = convertWikiLinksToMarkdown(markdown);
   markdown = updateMarkdownLinks(markdown, currSlug);
 
   // get mapping of current links

@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./components/**/*.tsx', './pages/**/*.tsx'],
+  content: ['./components/**/*.tsx', './pages/**/*.tsx', './app/**/*.tsx'],
+  darkMode: 'class',
   theme: {
     fontFamily: {
       'sans': '-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"'
@@ -12,6 +13,11 @@ module.exports = {
         'accent-7': '#333',
         success: '#0070f3',
         cyan: '#79FFE1',
+        // Dark mode colors
+        'dark-bg': '#0a0a0a',
+        'dark-surface': '#1a1a1a',
+        'dark-text': '#f8f9fa',
+        'dark-text-secondary': '#9ca3af',
       },
       spacing: {
         28: '7rem',
@@ -34,5 +40,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }

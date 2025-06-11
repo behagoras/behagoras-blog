@@ -24,62 +24,38 @@ function PostSingle({
   backlinks
 }: Props) {
   return (
-    <section>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="pt-32 pb-12 md:pt-40 md:pb-20">
-          <div className="max-w-3xl mx-auto lg:max-w-none">
-
-            <article>
-
-              {/* Article header */}
-              <header className="max-w-3xl mx-auto mb-20">
-                {/* Title */}
-                <h1 className="h1 text-center mb-4 text-6xl">{title}</h1>
-              </header>
-
-              {/* Article content */}
-              <div className="lg:flex lg:justify-between" data-sticky-container>
-
-
-                {/* Main content */}
-                <div>
-
-                  {/* Article meta */}
-                  {(author || date) && (
-                    <>
-                      <PostMeta author={author} date={date}/>
-                      <hr className="w-16 h-px pt-px bg-gray-200 border-0 my-6" />
-                    </>
-                  )}
-
-                  {/* Article body */}
-                  <PostBody content={content}/>
-
-                </div>
-
-                {/* Sidebar */}
-                <hr className="my-10 border border-dashed lg:block"/>
-                <aside className="relative lg:block lg:w-72 lg:ml-20 shrink-0">
-                  <div>
-                    <h4 className="text-lg font-bold leading-snug tracking-tight mb-4">Backlinks</h4>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
-                      {
-                        (Object.keys(backlinks).length > 0) && (
-                            <Backlinks backlinks={backlinks} />
-                        )
-                      }
-                    </div>
-                  </div>
-                </aside>
-
+    <section className="py-12">
+      <div className="max-w-4xl mx-auto">
+        <article>
+          {/* Article header */}
+          <header className="mb-8">
+            <h1 className="text-4xl font-bold mb-6 text-gray-900 dark:text-dark-text leading-tight">
+              {title}
+            </h1>
+            
+            {/* Article meta */}
+            {(author || date) && (
+              <div className="border-b border-gray-200 dark:border-gray-700 pb-6 mb-8">
+                <PostMeta author={author} date={date}/>
               </div>
+            )}
+          </header>
 
-              {/* Article footer */}
-            </article>
-
+          {/* Article content */}
+          <div className="mb-12">
+            <PostBody content={content}/>
           </div>
 
-        </div>
+          {/* Backlinks section */}
+          {Object.keys(backlinks).length > 0 && (
+            <aside className="border-t border-gray-200 dark:border-gray-700 pt-8">
+              <h4 className="text-lg font-bold leading-snug tracking-tight mb-4 text-gray-900 dark:text-dark-text">
+                Backlinks
+              </h4>
+              <Backlinks backlinks={backlinks} />
+            </aside>
+          )}
+        </article>
       </div>
     </section>
   );
