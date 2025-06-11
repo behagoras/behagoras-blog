@@ -21,6 +21,20 @@ Run the development server:
 npm run dev
 ```
 
+## Deployment
+
+This project uses an automated deployment pipeline with Vercel:
+
+- **Production**: Automatically deploys when you push to `main` branch
+- **Preview**: Creates preview deployments for pull requests
+- **Quality Checks**: Runs type checking and build tests before deployment
+
+### Setup Deployment (One-time)
+
+1. Run the setup script: `./scripts/setup-vercel.sh`
+2. Follow the Vercel CLI prompts to link your project
+3. Add required secrets to your GitHub repository (see setup script output)
+
 ## How to add a new post
 
 1. Run the [dev server](#how-to-run)
