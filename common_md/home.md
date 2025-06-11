@@ -1,75 +1,58 @@
 ---
-title: About David Behar – Full Stack Developer & Problem Solver
-excerpt: I’m David Behar, a Full Stack Developer with 15+ years of experience in tech, focused on building scalable, high-performance web applications. This site shares my thoughts, ideas, and portfolio.
+title: 👋 Hi, I'm David Behar
+excerpt: I'm a Full Stack Developer with 15+ years building apps that people actually enjoy using. Here you'll find my projects, thoughts, and maybe a little geeky enthusiasm.
 ---
+| 🚀 Full Stack Developer | 🖥️ 15+ Years in Tech | 📱 Building Apps People Love | 🛠️ Web, Cloud & Team Leadership | ❤️ JavaScript & TypeScript |
+| ----------------------- | --------------------- | ---------------------------- | --------------------------------| ----------------------------|
 
-## 👋 Hi, I'm David Behar
+Hey there! I'm **David Behar**, a Full Stack Developer who believes great software is about solving real-world problems—not just writing code.
 
-I'm a **Full Stack Developer** with over 15 years of experience in the tech industry — and more than 7 of those years deeply focused on web development.
+I've been building web apps, mentoring dev teams, and crafting scalable solutions for over 15 years. I still genuinely celebrate every successful deploy 🚀.
 
-What sets me apart is how I approach problems: I select the right tool for the job, whether that’s a full web application, a serverless backend, a CLI script, or even an Excel sheet if that’s what solves it best.
+## 💻 What I Actually Do
 
-I’ve worked across the stack, but specialize in:
-- Building and optimizing complex user interfaces with **React**
-- Designing scalable backends with **JavaScript**, **TypeScript**, and **AWS Serverless**
-- Creating **developer tools**, enhancing **CI/CD pipelines**, and improving **performance** from frontend to infrastructure
+I turn ideas into software that's intuitive, scalable, and reliable:
 
----
+- **Frontend:** Craft engaging UIs using `React`, `TypeScript`, and modern design systems.
+- **Backend & Cloud:** Develop scalable, serverless systems with `AWS Lambda`, `Serverless Framework`, and `Node.js`.
+- **DevOps & Automation:** Build efficient deployment workflows using `Jenkins`, `Azure DevOps`, and AWS tools.
+- **Testing & Quality:** Guarantee reliability through `Jest`, `Cypress`, and rigorous performance checks.
+- **AI & Productivity:** Accelerate prototyping and workflows with prompt engineering and generative AI.
 
-## 🛠️ My Experience in a Nutshell
+## 🔥 Stuff I'm Proud Of
 
-I’ve:
-- Led teams and mentored junior developers
-- Delivered high-quality systems in **micro frontend architectures**
-- Built scalable applications powered by **Serverless Framework**, **Lambda**, **API Gateway**, and **CloudFormation**
-- Driven cross-functional solutions with **Jenkins**, **Azure DevOps**, **Auth0**, **AppSync**, and more
-- Written tests with **Jest** and **Cypress** to ensure quality at every level
+- Leading and mentoring dev teams, helping engineers grow.
+- Building `micro-frontend` architectures that improved **dev experience and UX**.
+- Developing backend services handling **millions** of requests with `AWS Lambda`, `API Gateway`, and the full AWS ecosystem.
+- Streamlining **CI/CD pipelines**—shrinking deployments from **hours** down to **minutes**.
 
----
+## 🧠 How I Work
 
-## 💡 Philosophy & Approach
+- **Solve Real Problems:** Choose tech based on problems, not trends.
+- **Code is Communication:** Write clear, readable, maintainable code. `Developer experience` matters.
+- **Team Growth:** Mentor actively to build happy, productive teams.
+- **Constant Learning:** Always adapting, always sharing new insights.
 
-I care about:
-- **Solving the right problem**, not just coding for the sake of it
-- **Writing clear, maintainable code** and documenting ideas so others can follow
-- **Teaching and mentoring**, helping teams grow sustainably
-- Using **AI tools** (like prompt engineering) to accelerate early prototyping
+## ⚙️ Tech Stack Highlights
 
-I take pride in my ability to move between technical depth and big-picture thinking. Whether it’s shipping code or helping stakeholders understand trade-offs, I thrive in both arenas.
+- `React`
+- `TypeScript`
+- `Node.js`
+- **AWS**: (`Lambda`, `CloudFormation`, `AppSync`, etc)
+- `Serverless Framework`
+- `Jest`, `Cypress`
+- `Jenkins`, `Azure DevOps`
+- Agile methodologies (`Scrum`, `Kanban`)
+- `Figma` & UX/UI
+- Generative AI & prompt engineering
 
----
+## 📬 Let's Talk!
 
-## 🚀 Tech I Love Working With
+Interested in working together, hiring, or just nerding out about tech? Let's chat!
 
-- **Frontend**: React, Redux, Material UI, TypeScript, Webpack Module Federation
-- **Backend**: Node.js, AWS Lambda, Serverless Framework, Bash
-- **DevOps & Infra**: AWS (S3, CloudFormation, EventBridge, AppSync), Jenkins, Azure
-- **Testing**: Cypress, Jest
-- **Practices**: GitFlow, Agile/Scrum, Pair Programming
-- **Other Tools**: Figma, performance auditing, UX, generative AI
+- 🌐 [GitHub: behagoras](https://github.com/behagoras)
+- 🔗 [LinkedIn: davidbehar](https://linkedin.com/in/davidbehar)
 
----
-
-## 🔗 Get in Touch
-
-- 📧 [davbelom@gmail.com](mailto:davbelom@gmail.com)
-- 🌐 [github.com/behagoras](https://github.com/behagoras)
-- 🔗 [linkedin.com/in/davidbehar](https://linkedin.com/in/davidbehar)
-- 📱 +52 55 1699 88310
-
----
-
-## 🧭 Explore My Work
-
-This blog is powered by **Next.js**, styled with **TailwindCSS**, and generated from my **Obsidian vault**. I use it to document what I learn, what I build, and how I think.
-You can explore my notes, read articles, or view projects through:
-
-- 📄 [[Resume]]
-- 🚀 [[Projects]]
-- 🧠 [[Writings]]
-- 🌍 [[Graph View]]
-- 🏷️ [[Tags]]
-
-Thanks for stopping by!
+Thanks for dropping by—let's build something awesome!
 
 — David

@@ -21,7 +21,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           <h2 className="shrink-0 mr-4 text-2xl font-bold tracking-tight md:tracking-tighter leading-tight text-gray-900 dark:text-dark-text">
             <Link href="/" className="block hover:underline" aria-label="My Blog">
-              My Blog.
+              behar.io
             </Link>
           </h2>
           <ul className="flex grow justify-end flex-wrap items-center gap-2">

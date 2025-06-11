@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "8af4910b52300d33",
+        "id": "ced3e2025a77bdf5",
         "type": "tabs",
         "children": [
           {
-            "id": "e572dc9152eac05e",
+            "id": "fbb43e2dcb9322cd",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "home.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "home"
             }
           }
         ]
@@ -49,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#tag",
+                "query": "Hi, I'm David Behar",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -136,12 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "home.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of home"
             }
           }
         ],
@@ -161,13 +166,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e572dc9152eac05e",
+  "active": "fbb43e2dcb9322cd",
   "lastOpenFiles": [
-    "hello-world.md",
+    "home.md",
     "images/authors/david-behar.png.md",
+    "images/authors/david-behar.png",
+    "hello-world.md",
     "images/authors",
     "images",
-    "home.md",
     "hidden/get-project-id-account-id-and-token-vercel.md",
     "hidden/deploy-a-custom-linked-blog-starter.md",
     "hidden/connect-obsidian-vault-with-github.md",
