@@ -138,7 +138,7 @@ export default function CVPage() {
                     management, pipe analytics) supporting <strong>500+ users</strong>, establishing
                     front-end architecture patterns utilized by <strong>70+ engineers across 3 time zones</strong>.
                   </li>
-                  <li>
+                  <li id="achievement-module-federation">
                     Directed migration to <strong>Webpack Module Federation</strong>, decomposing a ~4MB
                     monolithic bundle into 20+ independently deployable modules (~15 MFEs, 3 shell apps,
                     7 collective libraries) with on-demand route-based loading. Diminished initial bundle
@@ -154,7 +154,7 @@ export default function CVPage() {
                     UI components) adopted across 5+ teams, shortening developer onboarding from ~2 months
                     to ~2 weeks and reducing AWS authentication setup time by <strong>50%</strong>.
                   </li>
-                  <li>
+                  <li id="achievement-cicd-optimization">
                     Led and mentored a <strong>team of 4 engineers</strong>, ran architecture and code
                     reviews, and instituted CI/CD improvements (incremental builds, pipeline
                     parallelization, independent MFE releases) that reduced build times by <strong>50%</strong> and
@@ -259,24 +259,27 @@ export default function CVPage() {
             ============================================================ */}
         <section className="cv-highlight-band cv-animate">
           <div className="cv-highlight-band__inner">
+            <h3 className="cv-highlight-band__title">Webpack Module Federation Migration</h3>
             <div className="cv-highlight-band__number cv-highlight-band__number--coral">~35%</div>
             <p className="cv-highlight-band__text">
-              <strong>Faster page loads</strong> after migrating to Webpack Module Federation with
-              on-demand route-based loading across 3 React applications
+              <strong>Faster page loads</strong> after decomposing a ~4MB monolithic bundle into 20+
+              independently deployable modules with on-demand route-based loading
             </p>
+            <a href="#achievement-module-federation" className="cv-highlight-band__link">See in experience &darr;</a>
           </div>
         </section>
 
-        {/* ============================================================
-            HIGHLIGHT BAND 2
-            ============================================================ */}
+        <div className="cv-highlight-band__spacer" />
+
         <section className="cv-highlight-band cv-animate">
           <div className="cv-highlight-band__inner">
+            <h3 className="cv-highlight-band__title">CI/CD Pipeline Optimization</h3>
             <div className="cv-highlight-band__number cv-highlight-band__number--teal">50%</div>
             <p className="cv-highlight-band__text">
-              <strong>Build time reduction</strong> through CI/CD improvements: incremental builds,
-              pipeline parallelization, and independent microfrontend releases
+              <strong>Build time reduction</strong> through incremental builds, pipeline parallelization,
+              and independent microfrontend releases
             </p>
+            <a href="#achievement-cicd-optimization" className="cv-highlight-band__link">See in experience &darr;</a>
           </div>
         </section>
 
