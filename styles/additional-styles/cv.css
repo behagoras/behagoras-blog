@@ -850,6 +850,102 @@
 
 
 /* ================================================================
+   ACCESSIBILITY - Reduced Motion
+   ================================================================ */
+@media (prefers-reduced-motion: reduce) {
+  .cv-animate {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .cv-hero__name,
+  .cv-hero__title,
+  .cv-hero__summary,
+  .cv-hero__metrics,
+  .cv-hero__actions {
+    animation: none !important;
+  }
+
+  .cv-hero__metric,
+  .cv-skill-card,
+  .cv-timeline__entry::before,
+  .cv-cta-band__button,
+  .cv-hero__download,
+  .cv-hero__link,
+  .cv-highlight-band__link,
+  .cv-skill-tag {
+    transition: none !important;
+  }
+
+  .cv-hero__metric:hover,
+  .cv-skill-card:hover,
+  .cv-cta-band__button:hover,
+  .cv-hero__download:hover {
+    transform: none !important;
+  }
+}
+
+/* ================================================================
+   ACCESSIBILITY - Focus indicators for custom interactive elements
+   ================================================================ */
+.cv-hero__download:focus-visible,
+.cv-hero__link:focus-visible,
+.cv-highlight-band__link:focus-visible,
+.cv-cta-band__button:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+
+/* ================================================================
+   ACCESSIBILITY - Improve color contrast
+   ================================================================ */
+
+/* Hero metric labels: improve from 0.45 to 0.7 opacity for better contrast on navy */
+.cv-hero__metric-label {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Hero summary: improve from 0.5 to 0.72 for AA compliance */
+.cv-hero__summary {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+/* Highlight band text: improve from 0.6 to 0.72 */
+.cv-highlight-band__text {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+/* Highlight band title: improve from 0.4 to 0.7 */
+.cv-highlight-band__title {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Highlight band link: improve from 0.5 to 0.7 */
+.cv-highlight-band__link {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Hero metrics: allow list-style-type none for semantic <ul> */
+.cv-hero__metrics {
+  list-style: none;
+  padding: 0;
+}
+
+/* Skill card tags: allow list-style-type none for semantic <ul> */
+.cv-skill-card__tags {
+  list-style: none;
+  padding: 0;
+}
+
+/* Language definition list: reset margins */
+.cv-languages dd {
+  margin: 0;
+}
+
+
+/* ================================================================
    PRINT
    ================================================================ */
 @media print {

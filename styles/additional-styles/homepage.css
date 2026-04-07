@@ -728,3 +728,78 @@
     font-size: 1.5rem;
   }
 }
+
+
+/* ================================================================
+   ACCESSIBILITY - Reduced Motion
+   ================================================================ */
+@media (prefers-reduced-motion: reduce) {
+  .home-animate,
+  .home-animate-fade,
+  .home-animate-scale,
+  .home-hero__eyebrow,
+  .home-hero__name,
+  .home-hero__hook,
+  .home-hero__actions,
+  .home-hero__scroll-hint,
+  .home-hero__scroll-hint svg {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .home-metric-card,
+  .home-tech-group,
+  .home-currently-card,
+  .home-cta__link {
+    transition: none !important;
+  }
+
+  .home-metric-card:hover,
+  .home-tech-group:hover,
+  .home-currently-card:hover,
+  .home-cta__link:hover {
+    transform: none !important;
+  }
+}
+
+
+/* ================================================================
+   ACCESSIBILITY - Focus indicators for custom interactive elements
+   ================================================================ */
+.home-cta__link:focus-visible,
+.home-blog__link:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+
+/* ================================================================
+   ACCESSIBILITY - Improve color contrast
+   ================================================================ */
+
+/* Metric card labels: improve from 0.4 opacity to 0.7 for better contrast on navy */
+.home-metric-card__label {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Hero hook text: improve from 0.65 to 0.78 for AA compliance on navy */
+.home-hero__hook {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+/* Currently building card text: improve from 0.55 to 0.72 for AA compliance on navy */
+.home-currently-card__text {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+/* Scroll hint: decorative, but improve slightly */
+.home-hero__scroll-hint {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* Metrics grid: allow list-style-type none for semantic <ul> */
+.home-metrics__inner {
+  list-style: none;
+  padding: 0;
+}
