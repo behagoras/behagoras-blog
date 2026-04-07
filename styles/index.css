@@ -5,3 +5,32 @@
 @import 'additional-styles/utils.css';
 @import 'additional-styles/cv.css';
 @import 'additional-styles/homepage.css';
+
+/* ================================================================
+   Global Accessibility Styles
+   ================================================================ */
+
+/* Ensure all interactive elements have visible focus indicators */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--coral, #e8604c);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Skip link styles (works for both Layout and standalone pages) */
+.sr-only.focus\:not-sr-only:focus {
+  clip: auto;
+  clip-path: none;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  padding: 0;
+  position: fixed;
+  width: auto;
+  white-space: nowrap;
+}

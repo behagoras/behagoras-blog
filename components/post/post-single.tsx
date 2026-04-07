@@ -48,10 +48,10 @@ function PostSingle({
 
           {/* Backlinks section */}
           {Object.keys(backlinks).length > 0 && (
-            <aside className="border-t border-gray-200 dark:border-gray-700 pt-8">
-              <h4 className="text-lg font-bold leading-snug tracking-tight mb-4 text-gray-900 dark:text-dark-text">
+            <aside className="border-t border-gray-200 dark:border-gray-700 pt-8" aria-label="Pages that link to this post">
+              <h2 className="text-lg font-bold leading-snug tracking-tight mb-4 text-gray-900 dark:text-dark-text">
                 Backlinks
-              </h4>
+              </h2>
               <Backlinks backlinks={backlinks} />
             </aside>
           )}
