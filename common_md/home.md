@@ -1,58 +1,33 @@
 ---
-title: 👋 Hi, I'm David Behar
-excerpt: I'm a Full Stack Developer with 15+ years building apps that people actually enjoy using. Here you'll find my projects, thoughts, and maybe a little geeky enthusiasm.
+title: David Behar
+excerpt: Senior Full-Stack Engineer, 10+ years. TypeScript, React, Node.js, AWS. Mexico City, open to remote.
 ---
-| 🚀 Full Stack Developer | 🖥️ 15+ Years in Tech | 📱 Building Apps People Love | 🛠️ Web, Cloud & Team Leadership | ❤️ JavaScript & TypeScript |
-| ----------------------- | --------------------- | ---------------------------- | --------------------------------| ----------------------------|
 
-Hey there! I'm **David Behar**, a Full Stack Developer who believes great software is about solving real-world problems—not just writing code.
+Hey, I'm **David Behar**. I'm a full-stack engineer based in Mexico City with 10+ years of experience building web applications, APIs, and the infrastructure around them.
 
-I've been building web apps, mentoring dev teams, and crafting scalable solutions for over 15 years. I still genuinely celebrate every successful deploy 🚀.
+Right now I'm at **Autodesk**, where I lead a platform team building React microfrontends, serverless backends, and shared libraries used by 70+ engineers across 3 time zones. Before that I ran frontend teams, built e-commerce platforms, and grew an agency from 2 to 10+ engineers.
 
-## 💻 What I Actually Do
+## What I work with
 
-I turn ideas into software that's intuitive, scalable, and reliable:
+- **Frontend:** React, TypeScript, Redux, Webpack Module Federation, Storybook
+- **Backend & Cloud:** Node.js, AWS (Lambda, API Gateway, EventBridge, S3), Serverless Framework, GraphQL (AppSync)
+- **Testing:** Jest, Cypress, Vitest, Lighthouse CI
+- **CI/CD:** Jenkins, Azure DevOps, GitHub Actions
+- **Architecture:** Microfrontends, event-driven patterns, performance optimization
 
-- **Frontend:** Craft engaging UIs using `React`, `TypeScript`, and modern design systems.
-- **Backend & Cloud:** Develop scalable, serverless systems with `AWS Lambda`, `Serverless Framework`, and `Node.js`.
-- **DevOps & Automation:** Build efficient deployment workflows using `Jenkins`, `Azure DevOps`, and AWS tools.
-- **Testing & Quality:** Guarantee reliability through `Jest`, `Cypress`, and rigorous performance checks.
-- **AI & Productivity:** Accelerate prototyping and workflows with prompt engineering and generative AI.
+## Some things I've shipped
 
-## 🔥 Stuff I'm Proud Of
+- Migrated a ~4MB monolithic bundle to **20+ independently deployable microfrontend modules**, cutting bundle size by ~70% and page load times by ~35%
+- Built and maintained **75+ Lambda functions** across 15+ microservice backends
+- Created 5+ internal packages (auth SDKs, telemetry, shared UI) adopted across 5 teams, cutting onboarding from ~2 months to ~2 weeks
+- Led CI/CD improvements that reduced build times by 50%
 
-- Leading and mentoring dev teams, helping engineers grow.
-- Building `micro-frontend` architectures that improved **dev experience and UX**.
-- Developing backend services handling **millions** of requests with `AWS Lambda`, `API Gateway`, and the full AWS ecosystem.
-- Streamlining **CI/CD pipelines**—shrinking deployments from **hours** down to **minutes**.
+## Currently
 
-## 🧠 How I Work
+Building autonomous agents, WhatsApp bots for B2B sales, and pipelines that turn messy content into structured knowledge bases. Also into board games, and I will lose on purpose so you keep inviting me.
 
-- **Solve Real Problems:** Choose tech based on problems, not trends.
-- **Code is Communication:** Write clear, readable, maintainable code. `Developer experience` matters.
-- **Team Growth:** Mentor actively to build happy, productive teams.
-- **Constant Learning:** Always adapting, always sharing new insights.
+## Get in touch
 
-## ⚙️ Tech Stack Highlights
-
-- `React`
-- `TypeScript`
-- `Node.js`
-- **AWS**: (`Lambda`, `CloudFormation`, `AppSync`, etc)
-- `Serverless Framework`
-- `Jest`, `Cypress`
-- `Jenkins`, `Azure DevOps`
-- Agile methodologies (`Scrum`, `Kanban`)
-- `Figma` & UX/UI
-- Generative AI & prompt engineering
-
-## 📬 Let's Talk!
-
-Interested in working together, hiring, or just nerding out about tech? Let's chat!
-
-- 🌐 [GitHub: behagoras](https://github.com/behagoras)
-- 🔗 [LinkedIn: davidbehar](https://linkedin.com/in/davidbehar)
-
-Thanks for dropping by—let's build something awesome!
-
-— David
+- [GitHub](https://github.com/behagoras)
+- [LinkedIn](https://linkedin.com/in/davidbehar)
+- [Email](mailto:david@behar.io)

@@ -40,5 +40,6 @@ next-env.d.ts
 .cursor/
 
 
-# We will ignore for now the public folder
-public/
+# We will ignore for now the public folder except favicon
+public/*
+!public/favicon/

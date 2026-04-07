@@ -8,7 +8,6 @@ tags:
 date: 2025-06-11
 author:
   name: David Behar
-  picture: /images/authors/david-behar.png
 ---
 
 # Here I am 🌐
@@ -60,4 +59,4 @@ Upcoming posts:
 
 Feel free to explore and connect. Thanks for dropping by.
 
-— David
+David
