@@ -1,0 +1,125 @@
+/* Game Boy CV */
+.page{min-height:100vh;background:#2C2C3A;background-image:radial-gradient(circle at 20%% 20%%,rgba(78,58,94,0.3) 0%%,transparent 50%%),radial-gradient(circle at 80%% 80%%,rgba(58,42,72,0.2) 0%%,transparent 50%%);display:flex;flex-direction:column;align-items:center;padding:1rem;font-family:"Press Start 2P",monospace;image-rendering:pixelated}
+@media(min-width:640px){.page{padding:2rem}}
+.backLink{align-self:flex-start;max-width:480px;width:100%%;margin:0 auto .75rem;font-size:8px;color:#8B8B73;text-decoration:none;transition:color .2s;font-family:"Press Start 2P",monospace}
+.backLink:hover{color:#9BBC0F}
+@media(min-width:640px){.backLink{max-width:580px;font-size:9px}}
+.shell{background:linear-gradient(180deg,#D4D4BE 0%%,#C4C4A8 8%%,#C4C4A8 60%%,#8B8B73 100%%);border-radius:12px 12px 12px 60px;padding:16px 16px 20px;max-width:480px;width:100%%;box-shadow:inset 0 2px 0 rgba(255,255,255,.3),inset 0 -2px 0 rgba(0,0,0,.1),4px 4px 0 rgba(0,0,0,.3),8px 8px 20px rgba(0,0,0,.5);position:relative}
+@media(min-width:640px){.shell{max-width:580px;padding:20px 24px 28px;border-radius:16px 16px 16px 80px}}
+.dotMatrix{text-align:center;font-size:6px;color:#4E3A5E;letter-spacing:2px;margin-bottom:8px;text-transform:uppercase;opacity:.7;font-family:"Press Start 2P",monospace}
+.screenBezel{background:linear-gradient(180deg,#4A3A5A 0%%,#4E3A5E 10%%,#4E3A5E 90%%,#3A2A48 100%%);border-radius:8px;padding:16px 12px 12px;margin-bottom:16px;position:relative;box-shadow:inset 0 2px 4px rgba(0,0,0,.3)}
+@media(min-width:640px){.screenBezel{padding:20px 16px 16px;border-radius:10px}}
+.batteryLabel{position:absolute;top:5px;left:14px;font-size:5px;color:rgba(255,255,255,.25);text-transform:uppercase;letter-spacing:1px;font-family:"Press Start 2P",monospace}
+.batteryDot{display:inline-block;width:5px;height:5px;border-radius:50%%;background:#A31515;margin-right:3px;box-shadow:0 0 4px #A31515;animation:batteryPulse 3s ease-in-out infinite}
+@keyframes batteryPulse{0%%,100%%{opacity:1}50%%{opacity:.5}}
+.screen{background:#9BBC0F;border:3px solid #5A5A47;border-radius:4px;padding:12px;min-height:280px;max-height:60vh;overflow-y:auto;overflow-x:hidden;position:relative;box-shadow:inset 2px 2px 0 rgba(0,0,0,.08),inset -1px -1px 0 rgba(255,255,255,.1)}
+@media(min-width:640px){.screen{padding:16px;min-height:340px;max-height:65vh}}
+.screen::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:1;background:repeating-linear-gradient(0deg,transparent,transparent 1px,rgba(0,0,0,.03) 1px,rgba(0,0,0,.03) 2px)}
+.screen::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:1;background:radial-gradient(ellipse at center,transparent 50%%,rgba(15,56,15,.06) 100%%)}
+.screen::-webkit-scrollbar{width:6px}
+.screen::-webkit-scrollbar-track{background:#8BAC0F;border-radius:3px}
+.screen::-webkit-scrollbar-thumb{background:#306230;border-radius:3px}
+.screenContent{position:relative;z-index:2;color:#0F380F;font-size:7px;line-height:1.8;font-family:"Press Start 2P",monospace}
+@media(min-width:640px){.screenContent{font-size:8px}}
+.titleScreen{text-align:center;padding:8px 0 12px}
+.titleName{font-size:11px;color:#0F380F;margin-bottom:4px;text-shadow:1px 1px 0 #306230;letter-spacing:1px;font-family:"Press Start 2P",monospace}
+@media(min-width:640px){.titleName{font-size:14px}}
+.titleRole{font-size:6px;color:#306230;margin-bottom:10px;font-family:"Press Start 2P",monospace}
+@media(min-width:640px){.titleRole{font-size:7px}}
+.pressStart{font-size:7px;color:#0F380F;animation:blink 1s step-end infinite;margin-top:6px;font-family:"Press Start 2P",monospace}
+@keyframes blink{0%%,100%%{opacity:1}50%%{opacity:0}}
+.copyrightLine{font-size:5px;color:#306230;margin-top:10px;opacity:.7;font-family:"Press Start 2P",monospace}
+.divider{border:none;border-top:1px dashed #306230;margin:10px 0;opacity:.5}
+.menuNav{display:flex;flex-wrap:wrap;gap:2px;margin:8px 0 4px;padding:0;list-style:none}
+.menuItem{font-size:7px;color:#306230;cursor:pointer;padding:3px 6px;border:1px solid transparent;background:none;font-family:"Press Start 2P",monospace;transition:none;white-space:nowrap}
+.menuItem:hover{color:#0F380F}
+.menuItemActive{color:#0F380F;border-color:#306230;background:#8BAC0F}
+.menuArrow{display:inline-block;margin-right:2px;animation:arrowBounce .6s step-end infinite}
+@keyframes arrowBounce{0%%,100%%{transform:translateX(0)}50%%{transform:translateX(2px)}}
+.sectionHeader{font-size:8px;color:#0F380F;margin:8px 0 6px;padding-bottom:3px;border-bottom:2px solid #306230;text-transform:uppercase;letter-spacing:1px;font-family:"Press Start 2P",monospace}
+@media(min-width:640px){.sectionHeader{font-size:9px}}
+.contactGrid{display:grid;gap:4px;font-size:6px;font-family:"Press Start 2P",monospace}
+@media(min-width:640px){.contactGrid{font-size:7px}}
+.contactLabel{color:#306230}
+.contactValue{color:#0F380F;word-break:break-all}
+.contactLink{color:#0F380F;text-decoration:underline;text-decoration-style:dotted;text-underline-offset:2px}
+.contactLink:hover{color:#306230}
+.summary{font-size:6px;line-height:2;color:#0F380F;font-family:"Press Start 2P",monospace}
+@media(min-width:640px){.summary{font-size:7px}}
+.skillCategory{margin-bottom:8px}
+.skillCategoryLabel{font-size:6px;color:#306230;margin-bottom:4px;text-transform:uppercase;font-family:"Press Start 2P",monospace}
+@media(min-width:640px){.skillCategoryLabel{font-size:7px}}
+.skillRow{display:flex;align-items:center;gap:4px;margin-bottom:2px;font-size:6px;color:#0F380F;flex-wrap:nowrap;font-family:"Press Start 2P",monospace}
+@media(min-width:640px){.skillRow{font-size:7px;gap:6px}}
+.skillName{min-width:60px;flex-shrink:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media(min-width:640px){.skillName{min-width:80px}}
+.skillBar{display:flex;gap:1px;flex-shrink:0}
+.skillBlock{width:6px;height:8px;background:#0F380F}
+@media(min-width:640px){.skillBlock{width:8px;height:10px}}
+.skillBlockEmpty{width:6px;height:8px;background:#8BAC0F;border:1px solid #306230}
+@media(min-width:640px){.skillBlockEmpty{width:8px;height:10px}}
+.skillLevel{font-size:5px;color:#306230;white-space:nowrap}
+@media(min-width:640px){.skillLevel{font-size:6px}}
+.expEntry{margin-bottom:10px;padding:6px;border:1px solid #306230;background:rgba(139,172,15,.3)}
+.expHeader{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:4px;margin-bottom:2px}
+.expCompany{font-size:7px;color:#0F380F;font-family:"Press Start 2P",monospace}
+@media(min-width:640px){.expCompany{font-size:8px}}
+.expDate{font-size:5px;color:#306230;font-family:"Press Start 2P",monospace}
+@media(min-width:640px){.expDate{font-size:6px}}
+.expRole{font-size:6px;color:#306230;margin-bottom:4px;font-family:"Press Start 2P",monospace}
+@media(min-width:640px){.expRole{font-size:7px}}
+.expLocation{font-size:5px;color:#306230;opacity:.7;font-family:"Press Start 2P",monospace}
+.expBullets{list-style:none;padding:0;margin:4px 0 0}
+.expBullets li{font-size:5px;color:#0F380F;line-height:2;padding-left:10px;position:relative;margin-bottom:2px;font-family:"Press Start 2P",monospace}
+@media(min-width:640px){.expBullets li{font-size:6px}}
+.expBullets li::before{content:">";position:absolute;left:0;color:#306230}
+.eduEntry{margin-bottom:8px}
+.eduSchool{font-size:7px;color:#0F380F;font-family:"Press Start 2P",monospace}
+@media(min-width:640px){.eduSchool{font-size:8px}}
+.eduDegree{font-size:6px;color:#306230;font-family:"Press Start 2P",monospace}
+@media(min-width:640px){.eduDegree{font-size:7px}}
+.eduDesc{font-size:5px;color:#0F380F;line-height:2;margin-top:2px;font-family:"Press Start 2P",monospace}
+@media(min-width:640px){.eduDesc{font-size:6px}}
+.langRow{font-size:6px;color:#0F380F;margin-bottom:2px;font-family:"Press Start 2P",monospace}
+@media(min-width:640px){.langRow{font-size:7px}}
+.langLabel{color:#306230}
+.controls{display:flex;justify-content:space-between;align-items:flex-start;padding:8px 4px 0;min-height:80px}
+@media(min-width:640px){.controls{padding:12px 8px 0;min-height:100px}}
+.dpad{position:relative;width:64px;height:64px;flex-shrink:0}
+@media(min-width:640px){.dpad{width:80px;height:80px}}
+.dpadCenter{position:absolute;top:50%%;left:50%%;transform:translate(-50%%,-50%%);width:20px;height:20px;background:#6B6B58;border-radius:50%%}
+@media(min-width:640px){.dpadCenter{width:24px;height:24px}}
+.dpadUp,.dpadDown,.dpadLeft,.dpadRight{position:absolute;background:#8B8B73;border-radius:2px;box-shadow:inset 0 -1px 0 rgba(0,0,0,.2),inset 0 1px 0 rgba(255,255,255,.1)}
+.dpadUp,.dpadDown{width:20px;height:22px;left:50%%;transform:translateX(-50%%)}
+@media(min-width:640px){.dpadUp,.dpadDown{width:24px;height:28px}}
+.dpadUp{top:0;border-radius:3px 3px 0 0}
+.dpadDown{bottom:0;border-radius:0 0 3px 3px}
+.dpadLeft,.dpadRight{width:22px;height:20px;top:50%%;transform:translateY(-50%%)}
+@media(min-width:640px){.dpadLeft,.dpadRight{width:28px;height:24px}}
+.dpadLeft{left:0;border-radius:3px 0 0 3px}
+.dpadRight{right:0;border-radius:0 3px 3px 0}
+.abButtons{display:flex;gap:8px;align-items:flex-start;flex-shrink:0;margin-top:4px;transform:rotate(-25deg)}
+@media(min-width:640px){.abButtons{gap:12px}}
+.btnContainer{display:flex;flex-direction:column;align-items:center;gap:4px}
+.abBtn{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%%;background:linear-gradient(145deg,#8B1A4A,#6B1040);border:none;color:#D4D4BE;font-family:"Press Start 2P",monospace;font-size:9px;cursor:pointer;box-shadow:inset 0 2px 0 rgba(255,255,255,.15),inset 0 -2px 0 rgba(0,0,0,.3),2px 2px 4px rgba(0,0,0,.4);transition:transform .1s,box-shadow .1s;text-decoration:none;line-height:1}
+@media(min-width:640px){.abBtn{width:44px;height:44px;font-size:11px}}
+.abBtn:hover{transform:scale(.95)}
+.abBtn:active{transform:scale(.9)}
+.btnLabel{font-size:6px;color:#8B8B73;text-transform:uppercase;transform:rotate(25deg);font-family:"Press Start 2P",monospace}
+.startSelect{display:flex;gap:16px;justify-content:center;margin-top:8px}
+@media(min-width:640px){.startSelect{gap:24px;margin-top:12px}}
+.ssBtn{width:32px;height:8px;background:#8B8B73;border-radius:8px;position:relative;box-shadow:inset 0 1px 2px rgba(0,0,0,.3)}
+@media(min-width:640px){.ssBtn{width:40px;height:10px}}
+.ssLabel{position:absolute;bottom:-12px;left:50%%;transform:translateX(-50%%);font-size:5px;color:#8B8B73;text-transform:uppercase;white-space:nowrap;letter-spacing:1px;font-family:"Press Start 2P",monospace}
+.speakerArea{position:absolute;bottom:16px;right:16px;display:flex;flex-direction:column;gap:3px;transform:rotate(-25deg)}
+@media(min-width:640px){.speakerArea{bottom:22px;right:22px;gap:4px}}
+.speakerLine{width:20px;height:2px;background:#8B8B73;border-radius:1px}
+.speakerLine:nth-child(2){width:22px}.speakerLine:nth-child(3){width:18px}.speakerLine:nth-child(4){width:24px}.speakerLine:nth-child(5){width:16px}.speakerLine:nth-child(6){width:20px}
+@media(min-width:640px){.speakerLine{width:26px;height:3px}.speakerLine:nth-child(2){width:30px}.speakerLine:nth-child(3){width:24px}.speakerLine:nth-child(4){width:32px}.speakerLine:nth-child(5){width:22px}.speakerLine:nth-child(6){width:28px}}
+.brandLabel{text-align:center;font-size:6px;color:#6B6B58;letter-spacing:3px;text-transform:uppercase;margin-top:6px;opacity:.5;font-family:"Press Start 2P",monospace}
+.footer{max-width:480px;width:100%%;text-align:center;margin-top:16px;font-size:7px;color:#8B8B73;font-family:"Press Start 2P",monospace}
+@media(min-width:640px){.footer{max-width:580px;font-size:8px}}
+.footerLink{color:#8B8B73;text-decoration:none;transition:color .2s}
+.footerLink:hover{color:#9BBC0F}
+.srOnly{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}
+@media print{.page{background:white!important;padding:0!important}.shell{box-shadow:none!important;background:white!important;max-width:100%%!important;border-radius:0!important}.screen{max-height:none!important;overflow:visible!important;background:white!important;border-color:#ccc!important}.screen::before,.screen::after{display:none!important}.screenContent{color:#000!important}.controls,.speakerArea,.startSelect,.brandLabel,.dotMatrix,.batteryLabel,.batteryDot{display:none!important}}
