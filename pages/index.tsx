@@ -201,11 +201,13 @@ export default function HomePage({ recentPosts }: Props) {
             <p className="home-hero__eyebrow">Senior Full-Stack Engineer &middot; Mexico City</p>
             <h1 className="home-hero__name">I build the platform<br />so your team can build the product.</h1>
             <p className="home-hero__hook">
-              I'm <strong>David Behar</strong>, a senior full-stack engineer with
-              10+ years of building the platforms other developers ship on.
-              React apps, microfrontends, serverless backends, CI/CD pipelines.
-              I still get excited about a clean deploy. Lately I'm building
-              AI agents because one career at a time felt too easy.
+              I'm <strong>David Behar</strong>. I build the platform, helping
+              dozens of developers create React apps, developed{' '}
+              <strong>15+ microfrontends</strong>, and{' '}
+              <strong>75+ serverless functions</strong>. 10+ years of shipping
+              TypeScript at scale, and I still get excited about a clean deploy
+              pipeline. Lately I'm building AI agents because one career at a
+              time felt too easy.
             </p>
 
             <div className="home-hero__actions">
