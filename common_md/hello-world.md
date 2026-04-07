@@ -59,4 +59,4 @@ Upcoming posts:
 
 Feel free to explore and connect. Thanks for dropping by.
 
-— David
+David
