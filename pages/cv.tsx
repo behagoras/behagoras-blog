@@ -269,9 +269,7 @@ export default function CVPage() {
           </div>
         </section>
 
-        <div className="cv-highlight-band__spacer" />
-
-        <section className="cv-highlight-band cv-animate">
+        <section className="cv-highlight-band cv-highlight-band--second cv-animate">
           <div className="cv-highlight-band__inner">
             <h3 className="cv-highlight-band__title">CI/CD Pipeline Optimization</h3>
             <div className="cv-highlight-band__number cv-highlight-band__number--teal">50%</div>
