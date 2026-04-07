@@ -1,0 +1,375 @@
+/* ==========================================================================
+   CV Timeline - Minimal Typographic Design
+   Swiss-inspired: generous white space, monochrome, clean hierarchy
+   ========================================================================== */
+
+/* ---- Page wrapper ---- */
+.cvPage {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 6rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* ---- Hero / Header ---- */
+.hero {
+  text-align: center;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 3rem;
+}
+
+.heroName {
+  font-size: 2.75rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin: 0 0 0.25rem;
+  color: #0a0a0a;
+}
+
+.heroTitle {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #666;
+  margin: 0 0 1.25rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.heroContact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+.heroContact a {
+  color: #1a1a1a;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+  transition: border-color 0.2s ease;
+}
+
+.heroContact a:hover {
+  border-color: #1a1a1a;
+}
+
+.separator {
+  color: #ccc;
+  margin: 0 0.35rem;
+  user-select: none;
+}
+
+.downloadBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  background: transparent;
+  border: 1px solid #1a1a1a;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.downloadBtn:hover {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+/* ---- Summary ---- */
+.summary {
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 2.5rem;
+}
+
+.summary p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #333;
+  margin: 0;
+  max-width: 720px;
+}
+
+/* ---- Section title ---- */
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #0a0a0a;
+  margin: 0 0 2rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #0a0a0a;
+}
+
+/* ---- Skills ---- */
+.skills {
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 2.5rem;
+}
+
+.skillGroups {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.75rem 3rem;
+}
+
+.skillGroup {
+  /* no extra styling needed */
+}
+
+.skillGroupLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #999;
+  margin: 0 0 0.5rem;
+}
+
+.skillPills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.pill {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.8rem;
+  color: #333;
+  background: #f5f5f5;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+
+/* ---- Timeline section ---- */
+.timelineSection {
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 2.5rem;
+}
+
+/* ---- Timeline layout (two-column: dates left, details right) ---- */
+.timeline {
+  position: relative;
+  padding-left: 0;
+}
+
+.timelineLine {
+  position: absolute;
+  left: 130px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: #d4d4d4;
+}
+
+.timelineItem {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 2rem;
+  position: relative;
+  padding-bottom: 2.5rem;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Visible state for intersection observer animation */
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Left/right variants: in this minimal layout both render the same
+   two-column grid (dates left, content right). Classes exist for
+   future alternating layouts if desired. */
+.left,
+.right {
+  /* intentionally identical */
+}
+
+.timelineDot {
+  position: absolute;
+  left: 126px;
+  top: 6px;
+  width: 9px;
+  height: 9px;
+  background: #1a1a1a;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.yearMarker {
+  text-align: right;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #888;
+  letter-spacing: 0.02em;
+  padding-top: 2px;
+  white-space: nowrap;
+}
+
+/* ---- Card ---- */
+.card {
+  padding-left: 0.75rem;
+}
+
+.cardSmall .bullets li {
+  font-size: 0.9rem;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 0.15rem;
+}
+
+.company {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0a0a0a;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.location {
+  font-size: 0.8rem;
+  color: #999;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.role {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #666;
+  margin: 0 0 0.75rem;
+}
+
+.bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bullets li {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: #444;
+}
+
+.bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 4px;
+  height: 4px;
+  background: #bbb;
+  border-radius: 50%;
+}
+
+/* ---- Languages ---- */
+.languagesSection {
+  /* last section, no border needed */
+}
+
+.languageGrid {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.languageCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.langName {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.langLevel {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+@media (max-width: 640px) {
+  .cvPage {
+    padding: 2rem 1rem 4rem;
+  }
+
+  .heroName {
+    font-size: 2rem;
+  }
+
+  .heroContact {
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .separator {
+    display: none;
+  }
+
+  .skillGroups {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  /* Stack the timeline vertically on mobile */
+  .timelineLine {
+    display: none;
+  }
+
+  .timelineDot {
+    display: none;
+  }
+
+  .timelineItem {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+    padding-left: 0;
+  }
+
+  .yearMarker {
+    text-align: left;
+    font-size: 0.8rem;
+  }
+
+  .card {
+    padding-left: 0;
+  }
+
+  .languageGrid {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
