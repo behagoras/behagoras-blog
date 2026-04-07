@@ -40,6 +40,7 @@ next-env.d.ts
 .cursor/
 
 
-# We will ignore for now the public folder except favicon
+# We will ignore for now the public folder except favicon and CV
 public/*
 !public/favicon/
+!public/david-behar-cv.pdf
