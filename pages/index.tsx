@@ -283,7 +283,7 @@ export default function HomePage({ recentPosts }: Props) {
               <h2 className="home-section-heading home-animate">What I Actually Do</h2>
               <div className="home-about__text home-animate home-animate-delay-1">
                 <p>
-                  At <strong>Autodesk</strong>, I build the platform that other
+                  With my team, I build the platform that other
                   engineering teams ship on top of. React microfrontends, serverless
                   backends, shared auth SDKs, telemetry packages. When something I ship
                   breaks, <strong>70+ engineers across 3 time zones</strong> let me know

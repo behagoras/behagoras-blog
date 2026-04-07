@@ -7,7 +7,7 @@ I'm **David Behar**. I build the platform that helps dozens of developers create
 
 ## What I actually do
 
-I build the platform that other engineering teams ship on. React microfrontends, serverless backends, shared auth SDKs, telemetry packages. Our tools are used by 70+ engineers across 3 time zones.
+With my team, I build the platform that other engineering teams ship on top of. React microfrontends, serverless backends, shared auth SDKs, telemetry packages. When something I ship breaks, 70+ engineers across 3 time zones let me know in English, Spanish, and a wall of Slack pings.
 
 I broke a ~4MB monolithic bundle into 20+ micro-frontends using Webpack Module Federation, cutting load times by ~35%. I maintain 75+ Lambda functions across 15+ microservice backends. I built internal libraries that brought developer onboarding from ~2 months to ~2 weeks.
 
