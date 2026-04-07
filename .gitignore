@@ -42,4 +42,4 @@ next-env.d.ts
 
 # We will ignore for now the public folder except favicon
 public/*
-!public/favicon/
+!public/favicon/!public/david-behar-cv.pdf
