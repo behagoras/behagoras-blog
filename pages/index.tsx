@@ -8,7 +8,6 @@ import { Badge } from '../components/ui/badge'
 import { Separator } from '../components/ui/separator'
 import {
   Download,
-  Mail,
   ArrowRight,
   ChevronDown,
   Bot,
@@ -93,7 +92,7 @@ const featuredWork = [
     accentColor: 'coral' as const,
     title: 'Bundle Size Reduction',
     description:
-      'Directed migration to Webpack Module Federation, decomposing a ~4MB monolithic bundle into 20+ independently deployable modules with on-demand route-based loading.',
+      'Took a ~4MB monolith and broke it into 20+ independently deployable micro-frontends with Webpack Module Federation. Page loads got ~35% faster. Deployments stopped being a team-wide anxiety event.',
   },
   {
     metric: '50%',
@@ -101,7 +100,7 @@ const featuredWork = [
     accentColor: 'teal' as const,
     title: 'Faster Build Times',
     description:
-      'Led CI/CD improvements through incremental builds, pipeline parallelization, and independent microfrontend releases across a multi-team engineering org.',
+      'Incremental builds, pipeline parallelization, independent MFE releases. Cut deployment pipelines from 12+ to ~5 per shared component change. The team got Friday afternoons back.',
   },
   {
     metric: '500+',
@@ -109,15 +108,15 @@ const featuredWork = [
     accentColor: 'navy' as const,
     title: 'Users Across 3 React Apps',
     description:
-      'Built and maintained 3 large-scale React applications with 15+ microfrontends and 7 shared libraries for water telemetry, CCTV, and asset management.',
+      '3 large-scale React apps for water telemetry, CCTV monitoring, and asset management. 15+ microfrontends, 7 shared libraries, used by 70+ engineers across time zones.',
   },
   {
     metric: '75+',
     metricColor: 'teal' as const,
     accentColor: 'teal' as const,
-    title: 'Lambda Functions',
+    title: 'Lambda Functions in Production',
     description:
-      'Built serverless upload/download workflows with AWS Lambda, API Gateway, and EventBridge across 15+ microservice backends.',
+      'Serverless upload/download workflows with compliance validation, built on AWS Lambda, API Gateway, and EventBridge across 15+ microservice backends. Auth SDK cut setup time by 50%.',
   },
 ]
 
@@ -148,13 +147,13 @@ export default function HomePage({ recentPosts }: Props) {
   return (
     <>
       <NextSeo
-        title="David Behar | Senior Full-Stack Engineer"
-        description="AI-native full-stack engineer with 10+ years of experience. React, TypeScript, Node.js, AWS. Building scalable microfrontend architectures at Autodesk."
+        title="David Behar | Senior Full-Stack Engineer | Mexico City"
+        description="Senior Full-Stack Engineer with 10+ years of experience. React, TypeScript, Node.js, AWS. Led ~70% bundle reduction across 15+ microfrontends at Autodesk."
         canonical="https://behar.io"
         openGraph={{
-          title: 'David Behar | Senior Full-Stack Engineer',
+          title: 'David Behar | Senior Full-Stack Engineer | Mexico City',
           description:
-            'AI-native full-stack engineer with 10+ years of experience building scalable web applications.',
+            'Senior Full-Stack Engineer, 10+ years. Led microfrontend architecture at Autodesk: ~70% bundle reduction, 75+ Lambda functions, 500+ users. Open to remote.',
           url: 'https://behar.io',
           type: 'website',
         }}
@@ -164,6 +163,38 @@ export default function HomePage({ recentPosts }: Props) {
           href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Person',
+              name: 'David Behar Lombrozo',
+              jobTitle: 'Senior Full-Stack Engineer',
+              worksFor: {
+                '@type': 'Organization',
+                name: 'Autodesk',
+              },
+              url: 'https://behar.io',
+              sameAs: [
+                'https://linkedin.com/in/davidbehar',
+                'https://github.com/behagoras',
+              ],
+              address: {
+                '@type': 'PostalAddress',
+                addressLocality: 'Mexico City',
+                addressCountry: 'MX',
+              },
+              knowsLanguage: ['en', 'es', 'he'],
+              alumniOf: [
+                {
+                  '@type': 'CollegeOrUniversity',
+                  name: 'Universidad Iberoamericana',
+                },
+              ],
+            }),
+          }}
+        />
       </Head>
 
       <div className="homepage">
@@ -172,12 +203,14 @@ export default function HomePage({ recentPosts }: Props) {
             ============================================================ */}
         <section className="home-hero">
           <div className="home-hero__inner">
-            <p className="home-hero__eyebrow">Senior Full-Stack Engineer</p>
-            <h1 className="home-hero__name">David Behar</h1>
+            <p className="home-hero__eyebrow">Senior Full-Stack Engineer &middot; Mexico City</p>
+            <h1 className="home-hero__name">I ship the thing<br />before the deadline ships you.</h1>
             <p className="home-hero__hook">
-              I build <strong>scalable React architectures</strong> and
-              {' '}<strong>serverless backends</strong> at Autodesk. 10+ years
-              turning complex systems into products that ship faster and perform better.
+              I'm <strong>David Behar</strong>, a senior full-stack engineer at{' '}
+              <strong>Autodesk</strong> with 10+ years of building React apps, serverless
+              backends, and the CI/CD pipelines that keep them honest. I led a migration
+              that cut <strong>~70% off a 4MB bundle</strong> and now I'm building AI agents
+              on the side because apparently I don't need sleep.
             </p>
 
             <div className="home-hero__actions">
@@ -249,26 +282,27 @@ export default function HomePage({ recentPosts }: Props) {
             ============================================================ */}
         <section className="home-about">
           <div className="home-about__inner">
-            <h2 className="home-section-heading home-animate">About</h2>
+            <h2 className="home-section-heading home-animate">What I Actually Do</h2>
             <div className="home-about__text home-animate home-animate-delay-1">
               <p>
-                I'm a full-stack engineer based in Mexico City with over a decade of
-                experience building web applications, APIs, and the infrastructure around
-                them. I thrive at the intersection of architecture and delivery, turning
-                complex requirements into clean, scalable systems.
+                At <strong>Autodesk</strong>, I lead a platform team that builds the
+                tools other engineers build on. Think React microfrontends, serverless
+                backends, auth SDKs, telemetry packages. Our stuff gets used by{' '}
+                <strong>70+ engineers across 3 time zones</strong>, so when I push
+                something broken, I hear about it in English, Spanish, and Slack notifications.
               </p>
               <p>
-                At <strong>Autodesk</strong>, I lead a platform team building React
-                microfrontends, serverless backends, and shared libraries used by{' '}
-                <strong>70+ engineers across 3 time zones</strong>. Before that I ran
-                frontend teams at Social Piper, built e-commerce platforms, and grew an
-                agency from 2 to 10+ engineers.
+                I decomposed a <strong>~4MB monolithic bundle into 20+ micro-frontends</strong>{' '}
+                using Webpack Module Federation, cutting initial load times by ~35%.
+                I built and maintain <strong>75+ Lambda functions</strong> across 15+
+                microservice backends. I created 5+ internal packages that shortened
+                developer onboarding from ~2 months to ~2 weeks.
               </p>
               <p>
-                I use <strong>Claude Code</strong> and multi-agent orchestration daily
-                to accelerate design, implementation, refactoring, and testing across the
-                full stack. I believe AI-augmented engineering is not a shortcut; it is
-                a multiplier for disciplined engineering.
+                Before Autodesk, I grew an agency (<strong>Qubit Works</strong>) from 2
+                to 10+ engineers, shipped 20+ client projects, and learned that the hardest
+                part of engineering is often translating "I want something like Uber but
+                for pharmacies" into a workable spec.
               </p>
             </div>
           </div>
@@ -355,10 +389,11 @@ export default function HomePage({ recentPosts }: Props) {
                 <span className="home-currently-card__icon">
                   <Bot size={32} strokeWidth={1.5} color="#e8604c" />
                 </span>
-                <h3 className="home-currently-card__title">Autonomous Agents</h3>
+                <h3 className="home-currently-card__title">AI Agents</h3>
                 <p className="home-currently-card__text">
-                  Exploring multi-agent orchestration patterns for code generation,
-                  review, and automated testing workflows.
+                  Multi-agent orchestration for code generation, review, and testing.
+                  I use Claude Code daily and I'm building autonomous workflows that
+                  do the tedious parts so humans can focus on the interesting ones.
                 </p>
               </div>
               <div className="home-currently-card home-animate home-animate-delay-2">
@@ -367,8 +402,9 @@ export default function HomePage({ recentPosts }: Props) {
                 </span>
                 <h3 className="home-currently-card__title">WhatsApp B2B Bots</h3>
                 <p className="home-currently-card__text">
-                  Building conversational sales agents for B2B companies that automate
-                  lead qualification and follow-up.
+                  Conversational sales agents that handle lead qualification and
+                  follow-up for B2B companies. Turns out WhatsApp is the enterprise
+                  tool of choice in Latin America.
                 </p>
               </div>
               <div className="home-currently-card home-animate home-animate-delay-3">
@@ -377,8 +413,9 @@ export default function HomePage({ recentPosts }: Props) {
                 </span>
                 <h3 className="home-currently-card__title">Knowledge Pipelines</h3>
                 <p className="home-currently-card__text">
-                  Pipelines that turn messy unstructured content into structured,
-                  searchable knowledge bases for teams.
+                  Pipelines that take messy, unstructured content (docs, Slack threads,
+                  meeting notes) and turn it into structured, searchable knowledge bases.
+                  Because tribal knowledge shouldn't live in one person's head.
                 </p>
               </div>
             </div>
@@ -456,27 +493,21 @@ export default function HomePage({ recentPosts }: Props) {
             ============================================================ */}
         <section className="home-cta">
           <div className="home-cta__inner">
-            <h2 className="home-cta__heading">Let's Connect</h2>
+            <h2 className="home-cta__heading">Let's Talk</h2>
             <p className="home-cta__text">
-              I'm open to remote opportunities and always happy to chat about
-              architecture, microfrontends, or AI-augmented engineering.
+              I'm based in Mexico City, open to remote roles, and always down to talk
+              architecture, microfrontends, AI-augmented engineering, or which board
+              game you should bring to game night. (I'll let you win.)
             </p>
             <div className="home-cta__links">
-              <a
-                href="mailto:davbelom@gmail.com"
-                className="home-cta__link"
-              >
-                <Mail size={18} />
-                davbelom@gmail.com
-              </a>
               <a
                 href="https://linkedin.com/in/davidbehar"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="home-cta__link home-cta__link--ghost"
+                className="home-cta__link"
               >
                 <LinkedinIcon size={18} />
-                LinkedIn
+                Connect on LinkedIn
               </a>
               <a
                 href="https://github.com/behagoras"
@@ -487,6 +518,13 @@ export default function HomePage({ recentPosts }: Props) {
                 <GithubIcon size={18} />
                 GitHub
               </a>
+              <Link
+                href="/about"
+                className="home-cta__link home-cta__link--ghost"
+              >
+                <ArrowRight size={18} />
+                About Me
+              </Link>
             </div>
           </div>
         </section>
