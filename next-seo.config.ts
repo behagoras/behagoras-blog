@@ -1,10 +1,10 @@
 import { DefaultSeoProps } from "next-seo";
 
-const description = "David Behar — Senior Full-Stack Engineer with 15+ years of experience building scalable web apps with React, TypeScript, Node.js, and AWS."
+const description = "Senior Full-Stack Engineer in Mexico City. 10+ years building React/TypeScript apps, serverless backends, and microfrontend architectures at Autodesk."
 // See https://www.npmjs.com/package/next-seo for more options
 const config: DefaultSeoProps = {
   titleTemplate: "%s | David Behar",
-  defaultTitle: "David Behar | Senior Full-Stack Engineer",
+  defaultTitle: "David Behar | Senior Full-Stack Engineer | Mexico City",
   description,
 
   canonical: 'https://behar.io',
@@ -13,7 +13,7 @@ const config: DefaultSeoProps = {
     locale: 'en_US',
     url: 'https://behar.io',
     siteName: 'David Behar',
-    title: 'David Behar | Senior Full-Stack Engineer',
+    title: 'David Behar | Senior Full-Stack Engineer | Mexico City',
     description,
   },
   twitter: {
