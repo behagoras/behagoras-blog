@@ -3,7 +3,7 @@ title: David Behar
 excerpt: Senior full-stack engineer, 10+ years. Building React microfrontends, serverless backends, and AI agents at Autodesk. Mexico City, open to remote.
 ---
 
-I'm **David Behar**, a senior full-stack engineer at **Autodesk** where I build the platform behind 3 React apps, 15+ microfrontends, and 75+ serverless functions. 10+ years of building TypeScript at scale. Based in Mexico City, open to remote.
+I'm **David Behar**, a senior full-stack engineer with 10+ years of building the platforms other developers ship on. React apps, microfrontends, serverless backends, CI/CD pipelines. Based in Mexico City, open to remote.
 
 ## What I actually do
 
