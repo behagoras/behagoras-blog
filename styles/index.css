@@ -3,4 +3,5 @@
 @tailwind utilities;
 
 @import 'additional-styles/utils.css';
+@import 'additional-styles/cv.css';
 @import 'additional-styles/homepage.css';

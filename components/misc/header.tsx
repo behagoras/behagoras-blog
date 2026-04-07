@@ -26,6 +26,11 @@ const Header = () => {
           </h2>
           <ul className="flex grow justify-end flex-wrap items-center gap-2">
             <li>
+              <Link href="/cv" className="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 transition-colors duration-200 px-2 py-1">
+                CV
+              </Link>
+            </li>
+            <li>
               <DarkModeToggle />
             </li>
             <li>
