@@ -1,57 +1,69 @@
 ---
-title: About David Behar
-excerpt: The story behind the code. From Interactive Design grad to platform engineering lead at Autodesk, with stops at a pharmacy startup and an agency I grew from 2 people.
+title: About
+excerpt: David Behar is a senior full-stack engineer based in Mexico City with 10+ years of experience building React and TypeScript apps at scale. Currently at Autodesk.
 ---
 
 # About Me
 
-I'm David Behar, a senior full-stack engineer based in Mexico City. I've spent 10+ years building web applications, APIs, and the infrastructure that holds it all together. Right now I'm at Autodesk, leading a platform team. Before that, I ran agencies, led frontend teams, and built a digital pharmacy from scratch.
+I'm **David Behar**, a senior full-stack engineer in Mexico City with 10+ years of building web applications, APIs, and the platform layers that connect them. I lead a platform team at **Autodesk** where I build the infrastructure and tooling that other engineering teams ship on top of.
 
-Here's the slightly longer version.
+If you want the highlight reel, the [homepage](/) has the numbers. If you want the timeline, there's a [CV](/cv). This page is the full story.
 
 ## How I got here
 
-I studied **Interactive Design** at Universidad Iberoamericana in Mexico City. The program was equal parts software, UX, and "figure out what the user actually wants." It turns out that skill is still the hardest part of engineering, regardless of how good your framework is.
+I studied Interactive Design at **Universidad Iberoamericana** in Mexico City. That design background still influences how I think about systems. I optimize for the experience of using something, not just for whether it compiles.
 
-My first real tech role was at **Farmaldea**, where I was Head of Technology for a digital pharmacy aggregator. We built a platform that let users search and purchase medications across 500+ pharmacies. I learned how to build products from zero, how to integrate with third-party APIs that don't follow their own documentation, and how to ship with a tiny team under real constraints.
+My first real leadership role was at **Farmaldea**, a digital pharmacy aggregator connecting 500+ pharmacies across Mexico. As Head of Technology, I learned to build products from scratch, communicate with non-technical stakeholders, and ship on timelines that were always shorter than they should have been.
 
-## The agency years
+### Qubit Works
 
-After Farmaldea, I co-led **Qubit Works**, a web and mobile agency. When I joined we were 2 people. When I left, we were 10+. I managed 20+ client projects, hired and trained engineers, established code review culture, and built the Agile processes that kept us sane.
+**Qubit Works** is where things clicked. I joined when it was 2 people. By the time I left, we were 10+ engineers with 20+ delivered client projects. As Head of Operations, I did architecture, hiring, project scoping, and client management, sometimes all before lunch.
 
-The agency taught me something that pure product companies sometimes miss: how to translate ambiguous client requirements into working software. When someone says "I want something like Uber but for X," you have to figure out which 5% of Uber actually matters to them and build that first. That skill has been more valuable to my career than any specific technology.
+That's where I got good at translating "I want something like Uber but for X" into a buildable technical plan. Every startup believes their idea is a simple app. None of them are. The real skill is separating what they need from what they think they want.
 
-## Social Piper and the frontend deep dive
+### Social Piper
 
-At **Social Piper**, I went deep on frontend architecture. I led a Vue-to-React migration, built a TypeScript component library with Storybook, and improved Core Web Vitals by 30-50% through performance audits and code splitting. It was here that I really fell in love with the craft of building UIs that are fast, accessible, and maintainable.
+At **Social Piper**, I worked as a Senior Frontend Engineer leading a Vue-to-React migration. We improved Core Web Vitals by 30-50%. The lesson: frameworks matter, but the discipline of a well-planned migration matters more.
 
-## Autodesk: where it all came together
+### Autodesk
 
-I've been at **Autodesk** since late 2019, and this is where everything clicked. I lead a platform team building React microfrontends, serverless backends, and shared libraries for water infrastructure products (telemetry, CCTV, asset management, pipe analytics).
+This is where I've been for the last few years, leading the platform team for a suite of industrial IoT applications (water telemetry, CCTV monitoring, asset management). The specifics:
 
-The highlight: I directed the migration from a ~4MB monolithic bundle to **20+ independently deployable micro-frontends** using Webpack Module Federation. Bundle size dropped by ~70%. Page loads got ~35% faster. Most importantly, teams could ship independently without coordinating a massive release train.
+- **3 large-scale React apps** with 15+ microfrontends and 7 shared libraries
+- **~70% bundle size reduction** by breaking a ~4MB monolith into independently deployable micro-frontends using Webpack Module Federation
+- **~35% faster page loads** post-migration
+- **75+ Lambda functions** across 15+ microservice backends on AWS
+- **5+ internal packages** that cut developer onboarding from ~2 months to ~2 weeks
+- **50% faster build times** through incremental builds and pipeline parallelization
+- **Team of 4** that I mentor directly
 
-I also built and maintain **75+ Lambda functions** across 15+ microservice backends, created internal packages (auth SDKs, telemetry modules, shared UI) that cut onboarding from ~2 months to ~2 weeks, and mentored a team of 4 engineers. On the CI/CD side, we cut build times by 50% through incremental builds and pipeline parallelization.
+500+ end users depend on these apps daily. 70+ engineers across 3 time zones build on our shared platform. When I push something broken, the feedback loop is fast and multilingual.
 
-## Why AI-augmented engineering matters to me
+## AI-augmented engineering
 
-I use **Claude Code** and multi-agent orchestration daily. Not as a replacement for thinking, but as a multiplier for disciplined engineering. It accelerates the boring parts (boilerplate, tests, refactoring) and gives me more time for the interesting parts (architecture decisions, system design, mentoring).
+I use **Claude Code** daily. Not to replace thinking, but to multiply the output of disciplined engineering. I've noticed that the developers who benefit most from AI tooling are the ones with strong fundamentals already. You need to recognize when the output is wrong.
 
-I'm also building side projects in this space: autonomous agents, WhatsApp bots for B2B sales, and knowledge pipelines that turn messy unstructured content into structured databases. I believe the engineers who learn to work effectively with AI tools will have a significant advantage, and I want to be one of them.
+On the side, I'm building:
+
+- **Multi-agent workflows** for code generation, automated review, and test scaffolding
+- **WhatsApp B2B bots** for lead qualification and sales follow-up (WhatsApp is the default business channel across Latin America)
+- **Knowledge pipelines** that convert messy, scattered content into structured, searchable knowledge bases
+
+I was accepted into **Platzi Master** (top 1% of LATAM tech talent). That experience reinforced something I already believed: the strongest engineers aren't the ones who memorize frameworks. They're the ones who learn quickly, communicate well, and ship reliably.
 
 ## What I'm looking for
 
-I want to work on hard problems with good people. I care about architecture, developer experience, and shipping things that users actually use. I'm interested in roles where I can lead technical direction, mentor engineers, and keep my hands in the code.
+Remote senior or staff-level roles where I can do what I'm best at: building platform infrastructure, leading small engineering teams, and shipping tools that make other developers more productive. I care about developer experience, clean architecture, and working with people who take their work seriously without taking themselves too seriously.
 
-I'm based in Mexico City, open to fully remote roles, and comfortable working across time zones (I've been doing it for 5+ years at Autodesk).
+## Outside of work
 
-## Beyond the code
+I play **board games** regularly. I strategically lose so my friends keep inviting me back. Long-term thinking.
 
-When I'm not at my keyboard, you'll probably find me at a board game night. I have a slightly embarrassing collection and I will lose on purpose so my friends keep inviting me back. I also play D&D, which is basically architecture design with more dragons.
+I play **D&D**, which is essentially system design with more dragons and significantly fewer standups. I'm the kind of player who writes backstory for characters the DM never asked about.
 
-I speak Spanish (native), English (advanced), and Hebrew (intermediate). I grew up in Mexico City and I'm still discovering new taco spots after 30+ years, which says more about the city than it does about me.
+I speak **Spanish** (native), **English** (advanced), and **Hebrew** (intermediate). I work in English daily, but my personality runs on Mexican warmth.
 
-I was selected for the **Platzi Master** program as one of the top 1% of students in Latin America, which involved 100+ courses in computer science, React, Node.js, AWS, and distributed systems. I'm a lifelong learner, which is a cliche, but also literally true when your industry reinvents itself every 18 months.
+I live in **Mexico City**, which is a great base for remote engineering: active tech community, outstanding food, and a time zone that overlaps with both US coasts.
 
 ## Get in touch
 

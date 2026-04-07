@@ -1,36 +1,38 @@
 ---
-title: David Behar | Senior Full-Stack Engineer | Mexico City
-excerpt: Senior Full-Stack Engineer, 10+ years. TypeScript, React, Node.js, AWS. Led ~70% bundle reduction at Autodesk. Mexico City, open to remote.
+title: David Behar
+excerpt: Senior full-stack engineer, 10+ years. Building React microfrontends, serverless backends, and AI agents at Autodesk. Mexico City, open to remote.
 ---
 
-# I ship the thing before the deadline ships you.
-
-I'm **David Behar**, a senior full-stack engineer at **Autodesk** with 10+ years building React apps, serverless backends, and the CI/CD pipelines that keep them honest. I led a migration that cut **~70% off a 4MB bundle** and now I'm building AI agents on the side because apparently I don't need sleep.
+I'm **David Behar**, a senior full-stack engineer at **Autodesk** where I lead the platform team behind 3 React apps, 15+ microfrontends, and 75+ serverless functions. 10+ years of building TypeScript at scale. Based in Mexico City, open to remote.
 
 ## What I actually do
 
-At **Autodesk**, I lead a platform team that builds the tools other engineers build on. React microfrontends, serverless backends, auth SDKs, telemetry packages. Our stuff gets used by **70+ engineers across 3 time zones**, so when I push something broken, I hear about it in English, Spanish, and Slack notifications.
+I run the platform that other engineering teams build on. React microfrontends, serverless backends, shared auth SDKs, telemetry packages. Our tools are used by 70+ engineers across 3 time zones.
 
-I decomposed a **~4MB monolithic bundle into 20+ micro-frontends** using Webpack Module Federation, cutting initial load times by ~35%. I built and maintain **75+ Lambda functions** across 15+ microservice backends. I created 5+ internal packages that shortened developer onboarding from ~2 months to ~2 weeks.
+I broke a ~4MB monolithic bundle into 20+ micro-frontends using Webpack Module Federation, cutting load times by ~35%. I maintain 75+ Lambda functions across 15+ microservice backends. I built internal libraries that brought developer onboarding from ~2 months to ~2 weeks.
 
-Before Autodesk, I grew an agency (**Qubit Works**) from 2 to 10+ engineers, shipped 20+ client projects, and learned that the hardest part of engineering is often translating "I want something like Uber but for pharmacies" into a workable spec.
+Before Autodesk, I grew Qubit Works from 2 to 10+ engineers, shipped 20+ client projects, and got very good at translating "I want Uber but for pharmacies" into something buildable.
 
-## Things I've shipped
+## What I work with
 
-- Took a ~4MB monolith and broke it into **20+ independently deployable micro-frontends** with Webpack Module Federation. Page loads got **~35% faster**. Deployments stopped being a team-wide anxiety event.
-- Built and maintained **75+ Lambda functions** across 15+ microservice backends with AWS Lambda, API Gateway, and EventBridge.
-- Created **5+ internal packages** (auth SDKs, telemetry, shared UI) adopted across 5 teams. Cut onboarding from ~2 months to ~2 weeks.
-- Led CI/CD improvements that cut build times by **50%** and reduced deployment pipelines from 12+ to ~5 per shared component change.
-- Mentored a **team of 4 engineers**, ran architecture reviews, and established code review culture.
+- **Frontend:** React, TypeScript, Redux, Webpack Module Federation, Storybook
+- **Backend & Cloud:** Node.js, AWS (Lambda, API Gateway, EventBridge, S3), Serverless Framework, GraphQL
+- **Testing:** Jest, Cypress, Vitest
+- **CI/CD:** Jenkins, Azure DevOps, GitHub Actions
+- **AI Tooling:** Claude Code, multi-agent orchestration, context engineering
 
-## Currently
+## Currently building
 
-Building AI agents, WhatsApp bots for B2B sales, and knowledge pipelines that turn messy content into structured, searchable databases. I use Claude Code daily for AI-augmented engineering because I believe it's a multiplier for disciplined engineering, not a shortcut.
+- **AI agent workflows:** Multi-agent systems for code generation, automated review, and test scaffolding
+- **WhatsApp sales bots:** Conversational agents for B2B lead qualification in Latin America
+- **Knowledge pipelines:** Turning unstructured content into searchable, queryable knowledge bases
 
-Also into board games (I will lose on purpose so you keep inviting me), D&D campaigns, and exploring Mexico City's food scene. Based in CDMX, open to remote.
+## The personal stuff
+
+Board games are a regular thing. I lose on purpose so my friends keep inviting me. I also play D&D, which is really just system architecture with more dragons and fewer standups.
 
 ## Get in touch
 
-- [LinkedIn](https://linkedin.com/in/davidbehar)
 - [GitHub](https://github.com/behagoras)
+- [LinkedIn](https://linkedin.com/in/davidbehar)
 - [behar.io](https://behar.io)

@@ -90,35 +90,51 @@ const featuredWork = [
     metric: '~70%',
     metricColor: 'coral' as const,
     accentColor: 'coral' as const,
-    title: 'Bundle Size Reduction',
+    title: 'Smaller Bundles',
     description:
-      'Took a ~4MB monolith and broke it into 20+ independently deployable micro-frontends with Webpack Module Federation. Page loads got ~35% faster. Deployments stopped being a team-wide anxiety event.',
+      'Split a ~4MB monolith into 20+ micro-frontends with Webpack Module Federation. Initial page loads dropped ~35%. Friday deploys stopped being a source of dread.',
   },
   {
     metric: '50%',
     metricColor: 'teal' as const,
     accentColor: 'teal' as const,
-    title: 'Faster Build Times',
+    title: 'Faster Build Pipelines',
     description:
-      'Incremental builds, pipeline parallelization, independent MFE releases. Cut deployment pipelines from 12+ to ~5 per shared component change. The team got Friday afternoons back.',
+      'Incremental builds, parallelized pipelines, independent MFE releases. Went from 12+ deploys per shared component change down to ~5. The team actually started shipping on Fridays again.',
   },
   {
     metric: '500+',
     metricColor: 'coral' as const,
     accentColor: 'navy' as const,
-    title: 'Users Across 3 React Apps',
+    title: 'End Users Across 3 Apps',
     description:
-      '3 large-scale React apps for water telemetry, CCTV monitoring, and asset management. 15+ microfrontends, 7 shared libraries, used by 70+ engineers across time zones.',
+      'Built 3 large-scale React apps (water telemetry, CCTV monitoring, asset management) with 15+ microfrontends and 7 shared libraries. 70+ engineers across time zones depend on these daily.',
   },
   {
     metric: '75+',
     metricColor: 'teal' as const,
     accentColor: 'teal' as const,
-    title: 'Lambda Functions in Production',
+    title: 'Serverless Functions',
     description:
-      'Serverless upload/download workflows with compliance validation, built on AWS Lambda, API Gateway, and EventBridge across 15+ microservice backends. Auth SDK cut setup time by 50%.',
+      'Upload/download workflows, compliance validation, event-driven pipelines. All on AWS Lambda, API Gateway, and EventBridge across 15+ microservice backends. Built an auth SDK that cut integration time in half.',
   },
 ]
+
+/* ================================================================
+   JSON-LD Structured Data
+   ================================================================ */
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'David Behar Lombrozo',
+  jobTitle: 'Senior Full-Stack Engineer',
+  worksFor: { '@type': 'Organization', name: 'Autodesk' },
+  url: 'https://behar.io',
+  sameAs: [
+    'https://linkedin.com/in/davidbehar',
+    'https://github.com/behagoras',
+  ],
+}
 
 /* ================================================================
    Skill Badge with optional devicon
@@ -148,12 +164,12 @@ export default function HomePage({ recentPosts }: Props) {
     <>
       <NextSeo
         title="David Behar | Senior Full-Stack Engineer | Mexico City"
-        description="Senior Full-Stack Engineer with 10+ years of experience. React, TypeScript, Node.js, AWS. Led ~70% bundle reduction across 15+ microfrontends at Autodesk."
+        description="Senior full-stack engineer with 10+ years building React and TypeScript apps at scale. Currently leading platform architecture at Autodesk. Mexico City, open to remote."
         canonical="https://behar.io"
         openGraph={{
           title: 'David Behar | Senior Full-Stack Engineer | Mexico City',
           description:
-            'Senior Full-Stack Engineer, 10+ years. Led microfrontend architecture at Autodesk: ~70% bundle reduction, 75+ Lambda functions, 500+ users. Open to remote.',
+            'Senior react typescript developer, 10+ years. Leading microfrontend and platform architecture at Autodesk. Mexico City, open to remote.',
           url: 'https://behar.io',
           type: 'website',
         }}
@@ -165,35 +181,7 @@ export default function HomePage({ recentPosts }: Props) {
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'Person',
-              name: 'David Behar Lombrozo',
-              jobTitle: 'Senior Full-Stack Engineer',
-              worksFor: {
-                '@type': 'Organization',
-                name: 'Autodesk',
-              },
-              url: 'https://behar.io',
-              sameAs: [
-                'https://linkedin.com/in/davidbehar',
-                'https://github.com/behagoras',
-              ],
-              address: {
-                '@type': 'PostalAddress',
-                addressLocality: 'Mexico City',
-                addressCountry: 'MX',
-              },
-              knowsLanguage: ['en', 'es', 'he'],
-              alumniOf: [
-                {
-                  '@type': 'CollegeOrUniversity',
-                  name: 'Universidad Iberoamericana',
-                },
-              ],
-            }),
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </Head>
 
@@ -204,13 +192,13 @@ export default function HomePage({ recentPosts }: Props) {
         <section className="home-hero">
           <div className="home-hero__inner">
             <p className="home-hero__eyebrow">Senior Full-Stack Engineer &middot; Mexico City</p>
-            <h1 className="home-hero__name">I ship the thing<br />before the deadline ships you.</h1>
+            <h1 className="home-hero__name">I build the platform<br />so your team can build the product.</h1>
             <p className="home-hero__hook">
-              I'm <strong>David Behar</strong>, a senior full-stack engineer at{' '}
-              <strong>Autodesk</strong> with 10+ years of building React apps, serverless
-              backends, and the CI/CD pipelines that keep them honest. I led a migration
-              that cut <strong>~70% off a 4MB bundle</strong> and now I'm building AI agents
-              on the side because apparently I don't need sleep.
+              I'm <strong>David Behar</strong>. At <strong>Autodesk</strong>, I lead
+              the platform team behind 3 React apps, 15+ microfrontends, and 75+ serverless
+              functions. 10+ years of shipping TypeScript at scale, and I still get excited
+              about a clean deploy pipeline. Lately I'm building AI agents
+              because one career at a time felt too easy.
             </p>
 
             <div className="home-hero__actions">
@@ -254,13 +242,13 @@ export default function HomePage({ recentPosts }: Props) {
               <span className="home-metric-card__number home-metric-card__number--coral">
                 ~70%
               </span>
-              <span className="home-metric-card__label">Bundle Size Reduction</span>
+              <span className="home-metric-card__label">Bundle Reduction</span>
             </div>
             <div className="home-metric-card home-animate home-animate-delay-2">
               <span className="home-metric-card__number home-metric-card__number--teal">
                 500+
               </span>
-              <span className="home-metric-card__label">Users Served</span>
+              <span className="home-metric-card__label">End Users</span>
             </div>
             <div className="home-metric-card home-animate home-animate-delay-3">
               <span className="home-metric-card__number home-metric-card__number--coral">
@@ -285,24 +273,25 @@ export default function HomePage({ recentPosts }: Props) {
             <h2 className="home-section-heading home-animate">What I Actually Do</h2>
             <div className="home-about__text home-animate home-animate-delay-1">
               <p>
-                At <strong>Autodesk</strong>, I lead a platform team that builds the
-                tools other engineers build on. Think React microfrontends, serverless
-                backends, auth SDKs, telemetry packages. Our stuff gets used by{' '}
-                <strong>70+ engineers across 3 time zones</strong>, so when I push
-                something broken, I hear about it in English, Spanish, and Slack notifications.
+                At <strong>Autodesk</strong>, I run the platform team that other
+                engineering teams build on top of. React microfrontends, serverless
+                backends, shared auth SDKs, telemetry packages. When something I ship
+                breaks, <strong>70+ engineers across 3 time zones</strong> let me know
+                in English, Spanish, and a wall of Slack pings.
               </p>
               <p>
-                I decomposed a <strong>~4MB monolithic bundle into 20+ micro-frontends</strong>{' '}
-                using Webpack Module Federation, cutting initial load times by ~35%.
-                I built and maintain <strong>75+ Lambda functions</strong> across 15+
-                microservice backends. I created 5+ internal packages that shortened
-                developer onboarding from ~2 months to ~2 weeks.
+                I broke a <strong>~4MB monolithic bundle into 20+ micro-frontends</strong>{' '}
+                using Webpack Module Federation, which cut initial page loads by ~35%.
+                I own <strong>75+ Lambda functions</strong> across 15+ microservice
+                backends. I built 5+ internal libraries that brought developer
+                onboarding down from roughly 2 months to about 2 weeks.
               </p>
               <p>
-                Before Autodesk, I grew an agency (<strong>Qubit Works</strong>) from 2
-                to 10+ engineers, shipped 20+ client projects, and learned that the hardest
-                part of engineering is often translating "I want something like Uber but
-                for pharmacies" into a workable spec.
+                Before Autodesk, I ran an agency called <strong>Qubit Works</strong>,
+                growing the team from 2 to 10+ engineers and delivering 20+ client
+                projects. That's where I learned the hardest part of engineering:
+                turning "I want something like Uber but for pharmacies" into an
+                actual spec.
               </p>
             </div>
           </div>
@@ -343,7 +332,7 @@ export default function HomePage({ recentPosts }: Props) {
             ============================================================ */}
         <section className="home-work">
           <div className="home-work__inner">
-            <h2 className="home-section-heading home-animate">Featured Work</h2>
+            <h2 className="home-section-heading home-animate">Things I've Shipped</h2>
             <div className="home-work__grid">
               {featuredWork.map((item, i) => (
                 <Card
@@ -379,7 +368,7 @@ export default function HomePage({ recentPosts }: Props) {
         </section>
 
         {/* ============================================================
-            6. CURRENTLY
+            6. CURRENTLY BUILDING
             ============================================================ */}
         <section className="home-currently">
           <div className="home-currently__inner">
@@ -389,22 +378,23 @@ export default function HomePage({ recentPosts }: Props) {
                 <span className="home-currently-card__icon">
                   <Bot size={32} strokeWidth={1.5} color="#e8604c" />
                 </span>
-                <h3 className="home-currently-card__title">AI Agents</h3>
+                <h3 className="home-currently-card__title">AI Agent Workflows</h3>
                 <p className="home-currently-card__text">
-                  Multi-agent orchestration for code generation, review, and testing.
-                  I use Claude Code daily and I'm building autonomous workflows that
-                  do the tedious parts so humans can focus on the interesting ones.
+                  Multi-agent systems for code generation, automated review, and test
+                  scaffolding. I use Claude Code every day and I'm wiring up autonomous
+                  pipelines that handle the repetitive work so engineers can focus on
+                  the problems worth solving.
                 </p>
               </div>
               <div className="home-currently-card home-animate home-animate-delay-2">
                 <span className="home-currently-card__icon">
                   <MessageSquare size={32} strokeWidth={1.5} color="#2a9d8f" />
                 </span>
-                <h3 className="home-currently-card__title">WhatsApp B2B Bots</h3>
+                <h3 className="home-currently-card__title">WhatsApp Sales Bots</h3>
                 <p className="home-currently-card__text">
-                  Conversational sales agents that handle lead qualification and
-                  follow-up for B2B companies. Turns out WhatsApp is the enterprise
-                  tool of choice in Latin America.
+                  Conversational agents that qualify leads and handle follow-up for B2B
+                  companies over WhatsApp. In Latin America, WhatsApp is the enterprise
+                  communication channel, so that's where the bots live.
                 </p>
               </div>
               <div className="home-currently-card home-animate home-animate-delay-3">
@@ -413,9 +403,9 @@ export default function HomePage({ recentPosts }: Props) {
                 </span>
                 <h3 className="home-currently-card__title">Knowledge Pipelines</h3>
                 <p className="home-currently-card__text">
-                  Pipelines that take messy, unstructured content (docs, Slack threads,
-                  meeting notes) and turn it into structured, searchable knowledge bases.
-                  Because tribal knowledge shouldn't live in one person's head.
+                  Taking messy inputs (documentation, Slack threads, meeting recordings)
+                  and structuring them into searchable, queryable knowledge bases. Tribal
+                  knowledge is a liability when it only lives in someone's head.
                 </p>
               </div>
             </div>
@@ -495,9 +485,10 @@ export default function HomePage({ recentPosts }: Props) {
           <div className="home-cta__inner">
             <h2 className="home-cta__heading">Let's Talk</h2>
             <p className="home-cta__text">
-              I'm based in Mexico City, open to remote roles, and always down to talk
-              architecture, microfrontends, AI-augmented engineering, or which board
-              game you should bring to game night. (I'll let you win.)
+              Based in Mexico City, open to remote. Happy to talk architecture,
+              microfrontend strategy, AI-augmented dev workflows, or which board game
+              to bring to your next game night. Fair warning: I will let you win
+              so you invite me back.
             </p>
             <div className="home-cta__links">
               <a
@@ -507,7 +498,7 @@ export default function HomePage({ recentPosts }: Props) {
                 className="home-cta__link"
               >
                 <LinkedinIcon size={18} />
-                Connect on LinkedIn
+                LinkedIn
               </a>
               <a
                 href="https://github.com/behagoras"
@@ -518,13 +509,6 @@ export default function HomePage({ recentPosts }: Props) {
                 <GithubIcon size={18} />
                 GitHub
               </a>
-              <Link
-                href="/about"
-                className="home-cta__link home-cta__link--ghost"
-              >
-                <ArrowRight size={18} />
-                About Me
-              </Link>
             </div>
           </div>
         </section>
