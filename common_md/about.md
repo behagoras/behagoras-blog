@@ -5,7 +5,7 @@ excerpt: David Behar is a senior full-stack engineer based in Mexico City with 1
 
 # About Me
 
-I'm **David Behar**, a senior full-stack engineer in Mexico City with 10+ years of building web applications, APIs, and the platform layers that connect them. I lead a platform team at **Autodesk** where I build the infrastructure and tooling that other engineering teams ship on top of.
+I'm **David Behar**, a senior full-stack engineer in Mexico City with 10+ years of building web applications, APIs, and the platform layers that connect them. I build the infrastructure and tooling that other engineering teams ship on top of.
 
 If you want the highlight reel, the [homepage](/) has the numbers. If you want the timeline, there's a [CV](/cv). This page is the full story.
 
@@ -27,7 +27,7 @@ At **Social Piper**, I worked as a Senior Frontend Engineer leading a Vue-to-Rea
 
 ### Autodesk
 
-This is where I've been for the last few years, leading the platform team for a suite of industrial IoT applications (water telemetry, CCTV monitoring, asset management). The specifics:
+This is where I've been for the last few years, building the platform for a suite of industrial IoT applications (water telemetry, CCTV monitoring, asset management). The specifics:
 
 - **3 large-scale React apps** with 15+ microfrontends and 7 shared libraries
 - **~70% bundle size reduction** by breaking a ~4MB monolith into independently deployable micro-frontends using Webpack Module Federation

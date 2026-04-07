@@ -164,12 +164,12 @@ export default function HomePage({ recentPosts }: Props) {
     <>
       <NextSeo
         title="David Behar | Senior Full-Stack Engineer | Mexico City"
-        description="Senior full-stack engineer with 10+ years building React and TypeScript apps at scale. Currently leading platform architecture at Autodesk. Mexico City, open to remote."
+        description="Senior full-stack engineer with 10+ years building React and TypeScript apps at scale. Building platform architecture at Autodesk. Mexico City, open to remote."
         canonical="https://behar.io"
         openGraph={{
           title: 'David Behar | Senior Full-Stack Engineer | Mexico City',
           description:
-            'Senior react typescript developer, 10+ years. Leading microfrontend and platform architecture at Autodesk. Mexico City, open to remote.',
+            'Senior react typescript developer, 10+ years. Building microfrontend and platform architecture at Autodesk. Mexico City, open to remote.',
           url: 'https://behar.io',
           type: 'website',
         }}
@@ -201,11 +201,13 @@ export default function HomePage({ recentPosts }: Props) {
             <p className="home-hero__eyebrow">Senior Full-Stack Engineer &middot; Mexico City</p>
             <h1 className="home-hero__name">I build the platform<br />so your team can build the product.</h1>
             <p className="home-hero__hook">
-              I'm <strong>David Behar</strong>. At <strong>Autodesk</strong>, I lead
-              the platform team behind 3 React apps, 15+ microfrontends, and 75+ serverless
-              functions. 10+ years of shipping TypeScript at scale, and I still get excited
-              about a clean deploy pipeline. Lately I'm building AI agents
-              because one career at a time felt too easy.
+              I'm <strong>David Behar</strong>. I build the platform that helps
+              dozens of developers create React apps,{' '}
+              <strong>15+ microfrontends</strong>, and{' '}
+              <strong>75+ serverless functions</strong>. 10+ years of shipping
+              TypeScript at scale, and I still get excited about a clean deploy
+              pipeline. Lately I'm building AI agents because one career at a
+              time felt too easy.
             </p>
 
             <div className="home-hero__actions">
@@ -281,8 +283,8 @@ export default function HomePage({ recentPosts }: Props) {
               <h2 className="home-section-heading home-animate">What I Actually Do</h2>
               <div className="home-about__text home-animate home-animate-delay-1">
                 <p>
-                  At <strong>Autodesk</strong>, I run the platform team that other
-                  engineering teams build on top of. React microfrontends, serverless
+                  With my team, I build the platform that other
+                  engineering teams ship on top of. React microfrontends, serverless
                   backends, shared auth SDKs, telemetry packages. When something I ship
                   breaks, <strong>70+ engineers across 3 time zones</strong> let me know
                   in English, Spanish, and a wall of Slack pings.

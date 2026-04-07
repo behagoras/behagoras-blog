@@ -1,6 +1,6 @@
 import { DefaultSeoProps } from "next-seo";
 
-const description = "David Behar, senior full-stack engineer in Mexico City. 10+ years shipping React, TypeScript, and Node.js at scale. Leading platform and microfrontend architecture at Autodesk."
+const description = "David Behar, senior full-stack engineer in Mexico City. 10+ years shipping React, TypeScript, and Node.js at scale. Building platform and microfrontend architecture at Autodesk."
 // See https://www.npmjs.com/package/next-seo for more options
 const config: DefaultSeoProps = {
   titleTemplate: "%s | David Behar",
