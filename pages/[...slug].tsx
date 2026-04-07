@@ -34,16 +34,17 @@ export default function Post({ post, backlinks }: Props) {
           <NextSeo
             title={post.title}
             description={description}
+            canonical={`https://behar.io/${post.slug}`}
             openGraph={{
               title: post.title,
               description,
+              url: `https://behar.io/${post.slug}`,
               type: 'article',
+              ...(post.ogImage?.url ? {
               images: [{
-                url: (post.ogImage?.url) ? post.ogImage.url : "https://fleetingnotes.app/favicon/512.png",
-                width: (post.ogImage?.url) ? null: 512,
-                height: (post.ogImage?.url) ? null: 512,
-                type: null
+                url: post.ogImage.url,
               }]
+            } : {})
             }}
           />
           <PostSingle

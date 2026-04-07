@@ -2,13 +2,15 @@ import { useState, useEffect } from 'react'
 
 export default function DarkModeToggle() {
   const [isDark, setIsDark] = useState(false)
+  const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
+    setMounted(true)
     // Check localStorage on mount
     const saved = localStorage.getItem('darkMode')
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
     const shouldBeDark = saved ? saved === 'true' : prefersDark
-    
+
     setIsDark(shouldBeDark)
     document.documentElement.classList.toggle('dark', shouldBeDark)
   }, [])
@@ -18,6 +20,18 @@ export default function DarkModeToggle() {
     setIsDark(newValue)
     localStorage.setItem('darkMode', newValue.toString())
     document.documentElement.classList.toggle('dark', newValue)
+  }
+
+  // Render a placeholder with the same dimensions during SSR to avoid hydration mismatch
+  if (!mounted) {
+    return (
+      <button
+        className="p-2 rounded-lg transition-colors duration-200 hover:bg-gray-200 dark:hover:bg-gray-700"
+        aria-label="Toggle dark mode"
+      >
+        <span className="w-5 h-5 block" />
+      </button>
+    )
   }
 
   return (
@@ -37,4 +51,4 @@ export default function DarkModeToggle() {
       )}
     </button>
   )
-} 
+}

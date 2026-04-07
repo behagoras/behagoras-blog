@@ -1,17 +1,23 @@
 import { DefaultSeoProps } from "next-seo";
 
-const description = "Host your second brain with NextJS"
+const description = "David Behar — Senior Full-Stack Engineer with 15+ years of experience building scalable web apps with React, TypeScript, Node.js, and AWS."
 // See https://www.npmjs.com/package/next-seo for more options
 const config: DefaultSeoProps = {
-  titleTemplate: "%s | Linked Blog Starter",
-  defaultTitle: "Linked Blog Starter | My Second Brain",
+  titleTemplate: "%s | David Behar",
+  defaultTitle: "David Behar | Senior Full-Stack Engineer",
   description,
 
+  canonical: 'https://behar.io',
   openGraph: {
     type: 'website',
-    locale: 'en_IE',
-    title: 'Linked Blog Starter',
+    locale: 'en_US',
+    url: 'https://behar.io',
+    siteName: 'David Behar',
+    title: 'David Behar | Senior Full-Stack Engineer',
     description,
+  },
+  twitter: {
+    cardType: 'summary',
   },
   additionalLinkTags: [
     {
@@ -39,7 +45,7 @@ const config: DefaultSeoProps = {
     {
       rel: "manifest",
       href: "/favicon/site.webmanifest"
-    }
+    },
   ]
 };
 
