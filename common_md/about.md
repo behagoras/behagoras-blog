@@ -5,7 +5,7 @@ excerpt: David Behar is a senior full-stack engineer based in Mexico City with 1
 
 # About Me
 
-I'm **David Behar**, a senior full-stack engineer in Mexico City with 10+ years of building web applications, APIs, and the platform layers that connect them. At **Autodesk**, I build the platform infrastructure and tooling that other engineering teams ship on top of.
+I'm **David Behar**, a senior full-stack engineer in Mexico City with 10+ years of building web applications, APIs, and the platform layers that connect them. I build the infrastructure and tooling that other engineering teams ship on top of.
 
 If you want the highlight reel, the [homepage](/) has the numbers. If you want the timeline, there's a [CV](/cv). This page is the full story.
 
